@@ -55,7 +55,7 @@ const Contact = () => {
                         </div>
                         <div className="flex flex-wrap -mx-3 mb-6">
                             <div className="w-full px-3">
-                                <input className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 text-sm py-3" id="email" type="email" placeholder="Emai" />
+                                <input className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 text-sm py-3" id="email" type="email" placeholder="Email" />
                             </div>
                         </div>
                         <div className="flex flex-wrap -mx-3 mb-6">
