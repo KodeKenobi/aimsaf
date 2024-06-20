@@ -30,9 +30,9 @@ const Contact = () => {
                     <h2 className="uppercase tracking-widest text-accent text-sm mb-4">Contact</h2>
                     <h3 className="text-[60px] text-white relative z-1 font-serif font-light leading-none mb-10">Get in touch</h3>
                     <div className="flex flex-col gap-8">
-                        {data.map((item: any) => {
+                        {data.map((item: any, index: number) => {
                             return (
-                                <div className="flex items-center">
+                                <div key={index} className="flex items-center">
                                     <img src={item.icon} className="mr-16" />
                                     <div className="flex flex-col">
                                         <p className="text-white text-sm font-semibold mb-2">{item.label}</p>

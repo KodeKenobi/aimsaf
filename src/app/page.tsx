@@ -9,9 +9,9 @@ import Philosophy from './clientComponents/philosophy';
 import Contact from './clientComponents/contactUs';
 import Navigation from './serverComponents/navigation/navigation';
 
-const sections = [<LandingPage />, <About />, <Philosophy />, <Contact />];
+const sections = [<LandingPage key={1} />, <About key={2} />, <Philosophy key={3} />, <Contact key={4} />];
 
-const Section = ({ id, children }: any) => {
+const Section = ({ id, children, index }: any) => {
   const [ref] = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -26,7 +26,8 @@ const Section = ({ id, children }: any) => {
     <motion.div
       ref={ref}
       id={id}
-      className="h-screen flex items-center justify-center text-3xl snap-start"
+      key={index}
+      className="h-screen flex items-center justify-center snap-start"
       initial="hidden"
       animate="visible"
       variants={variants}

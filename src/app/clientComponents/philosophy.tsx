@@ -31,9 +31,9 @@ const Philosophy = () => {
             <h2 className="uppercase tracking-widest text-accent text-sm mb-4">Philosophy</h2>
             <h3 className="text-[60px] text-white relative z-1 font-serif font-light leading-none">Consistency through simplicity</h3>
             <div className="flex w-full justify-between gap-24 mt-10 relative z-10">
-                {data.map((item: any) => {
+                {data.map((item: any, index: number) => {
                     return (
-                        <div>
+                        <div key={index}>
                             <img src={item.icon} className="mx-auto mb-10 mt-6"/>
                             <p className="text-white text-sm mb-2">{item.heading}</p>
                             <p className="text-white text-sm">{item.content}</p>
