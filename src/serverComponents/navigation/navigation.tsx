@@ -1,4 +1,4 @@
-import MobileNav from "@/app/clientComponents/mobileNav";
+import MobileNav from "@/clientComponents/mobileNav";
 import Image from "next/image";
 import Link from "next/link";
 

@@ -1,6 +1,6 @@
 'use client'
 
-import Navigation from "../serverComponents/navigation/navigation";
+import Navigation from "@/serverComponents/navigation/navigation";
 
 const LandingPage = () => {
 

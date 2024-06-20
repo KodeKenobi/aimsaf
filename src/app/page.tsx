@@ -3,11 +3,10 @@
 import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import LandingPage from './clientComponents/landingPage';
-import About from './clientComponents/about';
-import Philosophy from './clientComponents/philosophy';
-import Contact from './clientComponents/contactUs';
-import Navigation from './serverComponents/navigation/navigation';
+import LandingPage from '@/clientComponents/landingPage';
+import About from '@/clientComponents/about';
+import Philosophy from '@/clientComponents/philosophy';
+import Contact from '@/clientComponents/contactUs';
 
 const sections = [<LandingPage key={1} />, <About key={2} />, <Philosophy key={3} />, <Contact key={4} />];
 
