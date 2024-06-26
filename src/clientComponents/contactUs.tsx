@@ -24,7 +24,7 @@ const Contact = () => {
     ]
 
     return (
-        <div className="flex flex-col w-full h-full justify-center relative bg-contact bg-cover p-20 pb-0">
+        <div className="flex flex-col w-full h-full justify-center relative bg-contact bg-cover p-20 pb-0" id="contact">
             <div className="grid grid-cols-2">
                 <div>
                     <h2 className="uppercase tracking-widest text-accent text-sm mb-4">Contact</h2>
