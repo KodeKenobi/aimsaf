@@ -12,6 +12,7 @@ const config: Config = {
       fontFamily: {
         gothic: ['Gothic', 'sans-serif'],
         serif: ['Baskerville'],
+        sans: ['var(--font-montserrat)'],
       },
       colors: {
         primary: '#061A2D',

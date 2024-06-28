@@ -35,3 +35,26 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Always show the navigation bar on mobile */
+@media (max-width: 767px) {
+  .navbar {
+    display: flex!important;
+    transform: translateY(0)!important;
+    opacity: 1!important;
+  }
+}
+
+/* Hide the navigation bar by default on larger screens */
+.navbar {
+  display: flex;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Show the navigation bar with a slide-down animation */
+.show-navbar {
+transform: translateY(0);
+  opacity: 1;
+}

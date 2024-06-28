@@ -1,27 +1,26 @@
 'use client'
 
-import Navigation from "@/serverComponents/navigation/navigation";
+import Navigation from "@/clientComponents/navigation";
 import { motion } from "framer-motion";
 
 const LandingPage = () => {
 
 
     return (
-        <div className="flex w-full h-full items-center p-24 relative">
-            <Navigation />
+        <div className="flex w-full h-full items-center md:p-24 p-12 relative">
             <motion.div
                 initial={{ width: 0, opacity: 0 }}
                 whileInView={{ width: '30%', opacity: 1 }}
                 transition={{ ease: "easeInOut", duration: 0.7 }}
-                className="absolute bg-primary w-[30%] h-full right-0 top-0 bg-opacity-75"
+                className="absolute bg-primary md:w-[30%] w-[15%] h-full right-0 top-0 bg-opacity-75"
             />
             <motion.h1
-                className="ml-auto w-[45%] text-[69px] text-white relative z-1 font-serif font-light leading-none mr-20"
+                className="ml-auto lg:w-[45%] md:w-[85%] lg:text-[69px] md:text-[55px] text-[50px] text-white relative z-1 font-serif font-light leading-none lg:mr-20"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeInOut", duration: 0.7, delay: 0.6 }}
             >
-                Boldhaven Management is  <br />a fundamental <br /> investment manager based in London
+                Boldhaven Management is a fundamental investment manager based in London
             </motion.h1>
             <motion.svg
                 xmlns="http://www.w3.org/2000/svg" className="absolute z-100 bottom-20 z-10 right-[calc(37%)]" width="28" height="28" viewBox="0 0 28 28" fill="none"

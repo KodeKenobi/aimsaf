@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const MobileNav = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const genericHamburgerLine = `h-[1px] w-7 my-1 rounded-full bg-black transition ease transform duration-300 z-10`;
+    const genericHamburgerLine = `h-[1px] w-7 my-1 rounded-full bg-white transition ease transform duration-300 z-10`;
 
     useEffect(() => {
         if (isOpen) {
@@ -17,7 +17,7 @@ const MobileNav = () => {
     return (
         <>
             <button
-                className="flex flex-col h-12 w-12 justify-center md:hidden items-center group"
+                className="flex flex-col h-12 w-12 justify-center lg:hidden items-center group z-[101]"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <div
@@ -41,8 +41,8 @@ const MobileNav = () => {
             <ul
                 className={
                     isOpen
-                        ? 'fixed md:hidden left-0 top-0 w-[100%] h-full ease-in-out text-right duration-1000 bg-navy bg-opacity-80'
-                        : 'ease-in-out duration-1000 w-[100%] fixed top-0 text-right bottom-0 left-[-100%] bg-navy bg-opacity-0'
+                        ? 'fixed lg:hidden left-0 top-0 w-[100%] h-full ease-in-out text-right duration-1000 bg-primary bg-opacity-100 z-[100]'
+                        : 'ease-in-out duration-1000 w-[100%] fixed top-0 text-right bottom-0 left-[-100%] bg-primary bg-opacity-100'
                 }
             >
                 {/* Mobile Logo */}
