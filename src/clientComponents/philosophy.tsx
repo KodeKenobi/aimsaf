@@ -32,54 +32,56 @@ const Philosophy = () => {
     ]
 
     return (
-        <div className="flex flex-col w-full h-full justify-center relative bg-primary p-20" id="philosphy">
+        <div className="flex flex-col w-full h-full justify-center relative bg-primary lg:p-20 p-12" id="philosphy">
             <motion.h2
-                className="uppercase tracking-widest text-accent text-sm mb-4"
+                className="uppercase tracking-widest text-accent text-sm mb-4 font-sans"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ ease: "easeInOut", duration: 0.7 }}
             >
                 Philosophy
             </motion.h2>
-            <motion.h3 className="text-[60px] text-white relative z-1 font-serif font-light leading-none"
+            <motion.h3 className="lg:text-[55px] text-[30px] text-white relative z-1 font-serif font-light leading-none "
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeInOut", duration: 0.7, delay: 1 }}
             >
                 Consistency through simplicity</motion.h3>
-            <div className="flex w-full justify-between gap-24 mt-10 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-4 w-full justify-between lg:gap-24 lg:gap-12 gap-6 gap-x-12 mt-10 relative z-10">
                 <motion.div
-                    className="absolute w-[100%] h-[1px] bg-highlight left-0 top-[20%] z-[1]"
+                    className="absolute w-[100%] h-[1px] bg-highlight left-0 top-[15%] z-[1] lg:block hidden"
                     initial={{ width: 0 }}
                     whileInView={{ width: '100%' }}
                     transition={{ ease: "easeInOut", duration: 3.2 }}
                 />
                 {data.map((item: any, index: number) => {
                     return (
-                        <div key={index}>
+                        <div key={index} className="lg:block flex font-sans">
                             <motion.img src={item.icon}
-                                className="mx-auto mb-10 mt-6 z-10 relative"
+                                className="mx-auto lg:mb-10 my-2 lg:mt-6 z-10 relative w-12 h-12 lg:block hidden"
                                 initial={{ opacity: 0, y: -10 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ ease: "easeInOut", duration: 0.6, delay: item.timing }}
                             />
-                            <motion.p
-                                className="text-white text-sm mb-2"
-                                initial={{ opacity: 0, y: -10 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ ease: "easeInOut", duration: 0.6, delay: item.timing + 0.2 }}
-                            >
-                                {item.heading}
+                            <div>
+                                <motion.p
+                                    className="text-white text-sm mb-2"
+                                    initial={{ opacity: 0, y: -10 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ ease: "easeInOut", duration: 0.6, delay: item.timing + 0.2 }}
+                                >
+                                    {item.heading}
 
-                            </motion.p>
-                            <motion.p
-                                className="text-white text-sm"
-                                initial={{ opacity: 0, y: -5 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ ease: "easeInOut", duration: 0.6, delay: item.timing + 0.4 }}
-                            >
-                                {item.content}
-                            </motion.p>
+                                </motion.p>
+                                <motion.p
+                                    className="text-white lg:text-sm text-xs"
+                                    initial={{ opacity: 0, y: -5 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ ease: "easeInOut", duration: 0.6, delay: item.timing + 0.4 }}
+                                >
+                                    {item.content}
+                                </motion.p>
+                            </div>
                         </div>
                     )
                 })}
