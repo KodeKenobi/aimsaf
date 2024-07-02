@@ -6,7 +6,7 @@ const About = () => {
 
 
     return (
-        <div className="flex w-full h-full items-center relative text-primary" id="about">
+        <div className="flex w-full h-full items-center overflow-hidden relative text-primary" id="about">
             <div className="absolute bg-primary w-[30%] h-full right-0 top-0 bg-opacity-75" />
             <div className="w-[70%] h-full bg-white lg:p-20 p-12 flex flex-col justify-center ">
                 <motion.h2
