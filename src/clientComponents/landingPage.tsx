@@ -34,7 +34,7 @@ const LandingPage = () => {
                 initial={{ height: 0, y: -420 }}
                 whileInView={{ height: '420px', y: 0 }}
                 transition={{ ease: "easeInOut", duration: 4, delay: 1.2 }}
-                className="h-[420px] w-[1px] bg-highlight absolute bottom-[calc(0px-338px)] rotate-180 z-10 right-[calc(37.9%)]"
+                className="h-[420px] hidden md:block w-[1px] bg-highlight absolute bottom-[calc(0px-338px)] rotate-180 z-10 right-[calc(37.9%)]"
             >
                 <motion.div
                     initial={{ width: 0 }}
