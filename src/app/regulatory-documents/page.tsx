@@ -30,11 +30,11 @@ export default function Disclosures() {
                         <p className="text-sm">
                             The Financial Conduct Authority (“FCA” or “regulator”) in its Prudential sourcebook for MiFID Investment Firms (“MIFIDPRU”) sets out the detailed prudential requirements that apply to Boldhaven Management LLP (“Boldhaven” or “the Firm”). In particular, Chapter 8 of MIFIDPRU (“MIFIDPRU 8” or the “public disclosures requirements”) sets out public disclosure obligations with which the Firm must comply, further to those prudential obligations.
                             <br /><br />
-                            Boldhaven is classified under MIFIDPRU as a small and non-interconnected investment firm (“SNI MIFIDPRU investment firm”). As such, MIFIDPRU 8 requires Boldhaven to disclose information regarding the Firm’s remuneration policy and practices.
+                            Boldhaven is classified under MIFIDPRU as a small and non-interconnected investment firm (“SNI MIFIDPRU investment firm”). As such, MIFIDPRU 8 requires Boldhaven to disclose information regarding the Firm&apos;s remuneration policy and practices.
                             <br /><br />
                             The Information is confidential and is not intended to influence you in making any investment decisions and should not be considered as advice or a recommendation to invest.
                             <br /><br />
-                            The purpose of these disclosures is to give stakeholders and market participants an insight into the Firm’s culture, and to assist stakeholders in making more informed decisions about their relationship with the Firm.
+                            The purpose of these disclosures is to give stakeholders and market participants an insight into the Firm&apos;s culture, and to assist stakeholders in making more informed decisions about their relationship with the Firm.
                             <br /><br />
                             This document has been prepared by Boldhaven in accordance with the requirements of MIFPRU 8 and is verified by the Governing Body. Unless otherwise stated, all figures are as at the 31st March 2023 financial year-end.
                             <br /><br />
@@ -51,9 +51,9 @@ export default function Disclosures() {
                                 <li>Support positive behaviours and healthy firm cultures; and</li>
                                 <li>Discourage behaviours that can lead to misconduct and poor customer outcomes.</li>
                             </ul>
-                            The objective of Boldhaven’s remuneration policies and practices are to establish, implement and maintain a culture that is consistent with, and promotes, sound and effective risk management and does not encourage risk-taking which is inconsistent with the risk profile of the Firm and the services that it provides to its clients.
+                            The objective of Boldhaven&apos;s remuneration policies and practices are to establish, implement and maintain a culture that is consistent with, and promotes, sound and effective risk management and does not encourage risk-taking which is inconsistent with the risk profile of the Firm and the services that it provides to its clients.
                             <br /><br />
-                            In addition, Boldhaven recognises that remuneration is a key component in how the Firm attracts, motivates and retains quality staff and sustains consistently high levels of performance, productivity and results. As such, the Firm’s remuneration philosophy is also grounded in the belief that its people are the most important asset and greatest competitive advantage.
+                            In addition, Boldhaven recognises that remuneration is a key component in how the Firm attracts, motivates and retains quality staff and sustains consistently high levels of performance, productivity and results. As such, the Firm&apos;s remuneration philosophy is also grounded in the belief that its people are the most important asset and greatest competitive advantage.
                             <br /><br />
                             Boldhaven is committed to excellence, teamwork, ethical behaviour and the pursuit of exceptional outcomes for its clients. From a remuneration perspective, this means that performance is determined through the assessment of various factors that relate to these values, and by making considered and informed decisions that reward effort, attitude and results.
                             <br /><br />
@@ -92,7 +92,7 @@ export default function Disclosures() {
                                     <td width="274">Effectiveness of controls</td>
                                 </tr>
                                 <tr>
-                                    <td width="274">Adherence to Firm’s policies and procedures</td>
+                                    <td width="274">Adherence to Firm&apos;s policies and procedures</td>
                                 </tr>
                                 <tr>
                                     <td width="274">Ongoing compliance</td>
@@ -108,11 +108,11 @@ export default function Disclosures() {
                             </tbody>
                         </table>
                         <p className="text-sm mt-10">
-                            The fixed and variable components of remuneration are appropriately balanced: the fixed component represents a sufficiently high proportion of the total remuneration to enable the operation of a fully flexible policy on variable remuneration. This allows for the possibility of paying no variable remuneration component, which the Firm would do in certain situations, such as where the Firm’s profitability performance is constrained, or where there is a risk that the Firm may not be able to meet its capital or liquidity regulatory requirements.
+                            The fixed and variable components of remuneration are appropriately balanced: the fixed component represents a sufficiently high proportion of the total remuneration to enable the operation of a fully flexible policy on variable remuneration. This allows for the possibility of paying no variable remuneration component, which the Firm would do in certain situations, such as where the Firm&apos;s profitability performance is constrained, or where there is a risk that the Firm may not be able to meet its capital or liquidity regulatory requirements.
                         </p>
                         <p className="text-sm font-bold uppercase mb-10 mt-10">Governance and Oversight</p>
                         <p className="text-sm">
-                            The Governing Body is responsible for setting and overseeing the implementation of Boldhaven’s remuneration policy and practices. In order to fulfil its responsibilities, the Governing Body:
+                            The Governing Body is responsible for setting and overseeing the implementation of Boldhaven&apos;s remuneration policy and practices. In order to fulfil its responsibilities, the Governing Body:
                             <br />
                             <br />
                             <ul>
@@ -122,13 +122,13 @@ export default function Disclosures() {
                                 <li>Ensures that the overall remuneration policy is consistent with the business strategy, objectives, values and interests of the Firm and of its clients.</li>
                             </ul>
                             <br /> <br />
-                            Boldhaven’s remuneration policy and practices are reviewed annually by the Governing Body.
+                            Boldhaven&apos;s remuneration policy and practices are reviewed annually by the Governing Body.
                         </p>
                         <p className="text-sm mb-10 mt-10 font-bold uppercase">
                             Quantitative Remuneration Disclosures
                         </p>
                         <p className="text-sm">
-                            For the financial year 1st April 2022 to 31st March 2023, the total amount of remuneration awarded to all staff was £424K, of which £361K comprised the fixed component of remuneration, and £63K comprised the variable component. For these purposes, ‘staff’ is defined broadly, and includes, for example, employees of the Firm itself, partners, employees of other entities in the group, employees of joint service companies, and secondees.
+                            For the financial year 1st April 2022 to 31st March 2023, the total amount of remuneration awarded to all staff was £424K, of which £361K comprised the fixed component of remuneration, and £63K comprised the variable component. For these purposes, &apos;staff&apos; is defined broadly, and includes, for example, employees of the Firm itself, partners, employees of other entities in the group, employees of joint service companies, and secondees.
                         </p>
                     </div>
                 );
@@ -140,7 +140,7 @@ export default function Disclosures() {
                             This web site is provided by Boldhaven Management LLP.
                             This web site is subject to international copyright laws and other intellectual property rights with all rights reserved. No information contained in this web site, any part of this web site, or associated documents (together the “Information”), may be redistributed in whole or in part, stored securely in a retrieval system, modified, linked into, republished, uploaded, transmitted in any form or by any means electronic or mechanical, or by photocopying, recording or otherwise without the express prior written permission of Boldhaven Management LLP.
                             <br /><br />
-                            The Information is confidential and is not intended to influence you in making any investment decisions and should not be considered as advice or a recommendation to invest. Any Information in this web site may not be suitable for all investors and investors must make their own investment decisions using their own independent advisors and relevant offering material. Any investment decisions must be based upon an investor’s specific financial situation and investment objectives and should be based solely on the information in the relevant offering memorandum. Income from or the price or value of any financial instruments may rise or fall. Past performance is not necessarily indicative of future results.
+                            The Information is confidential and is not intended to influence you in making any investment decisions and should not be considered as advice or a recommendation to invest. Any Information in this web site may not be suitable for all investors and investors must make their own investment decisions using their own independent advisors and relevant offering material. Any investment decisions must be based upon an investor&apos;s specific financial situation and investment objectives and should be based solely on the information in the relevant offering memorandum. Income from or the price or value of any financial instruments may rise or fall. Past performance is not necessarily indicative of future results.
                             <br /><br />
                             The content of this web site is not intended, and must not be construed, as an offer of, or a solicitation of an offer to purchase, any investments in any jurisdiction where such offer or solicitation would be unlawful. In particular, this web site is not intended as marketing of any fund in any member state of the European Economic Area for the purposes of the Directive 2011/61/EU on Alternative Investment Fund Managers.
                             <br /><br />
@@ -160,7 +160,7 @@ export default function Disclosures() {
                     <div className="text-white md:pt-24 pt-0">
                         <p className="text-sm font-bold uppercase mb-10">Shareholder Rights Directive</p>
                         <p className="text-sm">
-                            Boldhaven Management LLP (“Boldhaven”) is making this statement in Compliance with Rule 2.2B.5R of the FCA's Conduct of Business Sourcebook (“COBS”).
+                            Boldhaven Management LLP (“Boldhaven”) is making this statement in Compliance with Rule 2.2B.5R of the FCA&apos;s Conduct of Business Sourcebook (“COBS”).
                             <br /><br />
                             COBS requires every FCA authorised asset manager that invests in listed equities to:
                             <br /><br />
@@ -170,7 +170,7 @@ export default function Disclosures() {
                             <br /><br />
                             or, in either case, to publicly disclose a clear and reasoned explanation of why it has chosen not to comply with those requirements.
                             <br /><br />
-                            Boldhaven has considered carefully whether it wishes to adopt an engagement policy and to make the disclosures described above and has, for the time being, decided not to do so. As regards Boldhaven’s investments that are focused on equities, Boldhaven generally does not vote proxies. Upon the exceptional specific request of an individual portfolio manager, the Firm’s compliance department, in consultation with senior management, may consider granting permission to vote proxies, if it determines that the vote is in the best interest of investors.
+                            Boldhaven has considered carefully whether it wishes to adopt an engagement policy and to make the disclosures described above and has, for the time being, decided not to do so. As regards Boldhaven&apos;s investments that are focused on equities, Boldhaven generally does not vote proxies. Upon the exceptional specific request of an individual portfolio manager, the Firm&apos;s compliance department, in consultation with senior management, may consider granting permission to vote proxies, if it determines that the vote is in the best interest of investors.
                             <br /><br />
                             Therefore, while Boldhaven supports the general principles of shareholder engagement, it does not at this time (for the reasons set out above) consider it appropriate to adopt an engagement policy or make the relevant public disclosures. Boldhaven will keep its position under review and will update this section of its website accordingly, if there is a change in its approach.
                         </p>
@@ -271,7 +271,7 @@ export default function Disclosures() {
                         </p>
                         <p className="text-sm font-bold mb-10">Complaining to ICO</p>
                         <p className="text-sm mb-10">
-                            You have the right to complain to the Information Commissioner’s Office (ICO). Further information is available from the ICO’s website.
+                            You have the right to complain to the Information Commissioner&apos;s Office (ICO). Further information is available from the ICO&apos;s website.
                         </p>
                         <p className="text-sm font-bold mb-10">Website maintenance and use of cookies</p>
                         <p className="text-sm mb-10">
@@ -279,9 +279,9 @@ export default function Disclosures() {
                             <br /><br />
                             We may send text files (e.g., “cookies” or other cached files) or images to your web browser for technical convenience to store information on your computer. For instance, we may use a session cookie to store form information that you have entered so that you do not have to enter such information again. We may use information stored in such text files and images to customise your experience on this website and to monitor use of this website. You may set your browser to notify you when you receive a cookie. Many web browsers also allow you to block cookies. If you block cookies you may not be able to access certain parts of this website. You can disable cookies from your computer system by following the instructions on your browser or at www.allaboutcookies.org.
                             <br /><br />
-                            Google Analytics is also used to track website trends without identifying individual visitors. The cookie used by Google Analytics stores information such as what time the current visit occurred, whether the visitor has been to the site before, and what site referred the visitor to our website. Google Analytics generates statistical and other information about website use by means of cookies, which are stored on users’ computers.
+                            Google Analytics is also used to track website trends without identifying individual visitors. The cookie used by Google Analytics stores information such as what time the current visit occurred, whether the visitor has been to the site before, and what site referred the visitor to our website. Google Analytics generates statistical and other information about website use by means of cookies, which are stored on users&apos; computers.
                             The information generated relating to our website is used to create reports about the use of the website.
-                            Google will store and use this information. Google’s privacy policy is available at http://www.google.com/privacypolicy.html. If you would like to opt out of being tracked by Google Analytics across all websites please visit http://tools.google.com/dlpage/gaoptout.
+                            Google will store and use this information. Google&apos;s privacy policy is available at http://www.google.com/privacypolicy.html. If you would like to opt out of being tracked by Google Analytics across all websites please visit http://tools.google.com/dlpage/gaoptout.
                             <br /><br />
                         </p>
                         <p className="text-sm font-bold mb-10">Recording and monitoring of communications</p>
@@ -307,24 +307,24 @@ export default function Disclosures() {
                         <p className="text-sm">
                             We aim to ensure that we treat our customers fairly at all times. Any complaints will be investigated competently, diligently and impartially, assessed fairly and promptly with respect to the subject matter of the complaint, and whether the complaint should be upheld and what remedial action or redress may be appropriate.
                             <br /><br />
-                            The FCA’s Dispute Resolution (“DISP”) handbook sets out the rules relating to the handling of complaints from eligible complainants and MiFID clients. We have determined that we have no eligible complainants under the DISP rules at present and, as such, we are exempt from FCA rules in this area, however, we could receive MiFID complaints (as defined below).
+                            The FCA&apos;s Dispute Resolution (“DISP”) handbook sets out the rules relating to the handling of complaints from eligible complainants and MiFID clients. We have determined that we have no eligible complainants under the DISP rules at present and, as such, we are exempt from FCA rules in this area, however, we could receive MiFID complaints (as defined below).
                             <br /><br />
                             However, certain consumers could be considered to be eligible complainants under the DISP rules in the future and, as such, we will apply the rules within DISP with respect to those investors.
                             <br /><br />
-                            In the limited circumstances in which the FCA requirements with respect to eligible complainants apply to us, we expect such complaints will only relate to certain investors in our AIF(s) who can be categorised as a ‘consumer’ in relation to our regulated activities as the AIFM. The FCA has defined ‘consumer’ as a natural person acting for purposes outside their trade, business or profession (e.g. a high net worth individual could fall within this definition).
+                            In the limited circumstances in which the FCA requirements with respect to eligible complainants apply to us, we expect such complaints will only relate to certain investors in our AIF(s) who can be categorised as a &apos;consumer&apos; in relation to our regulated activities as the AIFM. The FCA has defined &apos;consumer&apos; as a natural person acting for purposes outside their trade, business or profession (e.g. a high net worth individual could fall within this definition).
                             <br /><br />
                         </p>
                         <p className="text-sm font-bold uppercase mb-10">Complaints Handling Procedure</p>
                         <p className="text-sm">
                             We define complaints as follows with respect to the two categories of complainants:
                             <br /><br />
-                            Eligible complaint –defined by the FCA as meaning ‘any oral or written expression of dissatisfaction, whether justified or not, from, or on behalf of, a person about the provision of, or failure to provide, a financial service which (a) alleges that the complainant has suffered (or may suffer) financial loss, material distress of material inconvenience; and (b) relates to an activity of that respondent, or any other respondent with whom that respondent has some connection in marketing or providing financial services or products, which comes under the jurisdiction of the Financial Ombudsman Service (“FOS”).
+                            Eligible complaint -defined by the FCA as meaning &apos;any oral or written expression of dissatisfaction, whether justified or not, from, or on behalf of, a person about the provision of, or failure to provide, a financial service which (a) alleges that the complainant has suffered (or may suffer) financial loss, material distress of material inconvenience; and (b) relates to an activity of that respondent, or any other respondent with whom that respondent has some connection in marketing or providing financial services or products, which comes under the jurisdiction of the Financial Ombudsman Service (“FOS”).
                             <br /><br />
-                            MiFID complaint – defined as ‘any oral or written expression of dissatisfaction, whether justified or not, from, or on behalf of, a person about the provision of, or failure to provide, a financial service or a redress determination which alleges that the complainant has suffered or may suffer financial loss, material distress or material inconvenience’. This does not come under the jurisdiction of FOS.
+                            MiFID complaint - defined as &apos;any oral or written expression of dissatisfaction, whether justified or not, from, or on behalf of, a person about the provision of, or failure to provide, a financial service or a redress determination which alleges that the complainant has suffered or may suffer financial loss, material distress or material inconvenience&apos;. This does not come under the jurisdiction of FOS.
                             <br /><br />
                             Upon receipt of a Complaint, as defined above, the Chief Operating Officer will ensure that eligible complainants are provided a copy of this document, which constitutes our complaints handling policy, when acknowledging a complaint.
                             <br /><br />
-                            We will endeavor to communicate with you clearly and in plain language that is easy to understand and reply to your complaint without undue delay. As soon as we have made the relevant enquiries and reviewed your complaint we will write to you. If we have reasonable grounds to be satisfied that another respondent may be solely or jointly responsible for the matter alleged in your complaint, we may promptly forward the complaint, or the relevant part of it, in writing to that other respondent. We will inform you promptly in a final response of the reason for forwarding the complaint, including the other respondent's contact details. Where jointly responsible for the fault alleged in the complaint, we will comply with own obligations under the DISP rules in respect of that part of the complaint we have not forwarded.
+                            We will endeavor to communicate with you clearly and in plain language that is easy to understand and reply to your complaint without undue delay. As soon as we have made the relevant enquiries and reviewed your complaint we will write to you. If we have reasonable grounds to be satisfied that another respondent may be solely or jointly responsible for the matter alleged in your complaint, we may promptly forward the complaint, or the relevant part of it, in writing to that other respondent. We will inform you promptly in a final response of the reason for forwarding the complaint, including the other respondent&apos;s contact details. Where jointly responsible for the fault alleged in the complaint, we will comply with own obligations under the DISP rules in respect of that part of the complaint we have not forwarded.
                             <br /><br />
                             We will endeavor to write to you within eight weeks.
                             <br /><br />
@@ -358,7 +358,7 @@ export default function Disclosures() {
                         <a href="/"><img src="./boldhaven-logo.svg" className="w-42 mb-10 " /></a>
                         <p onClick={() => router.push('/')} className="text-white uppercase font-sans text-primary text-xs font-semibold mb-8 cursor-pointer">{`< BACK`}</p>
                         {links.map((item: any, key: number) => {
-                            return <div className="flex flex-row items-center gap-1 ">{item.icon && <Image className="mb-8" width={15} height={15} src={"/icon-pdf.svg"} alt={"pdf-icon"} />}<li key={key} onClick={() => { setContent(item.name) }} className="uppercase font-sans text-primary text-xs font-semibold mb-8 cursor-pointer" style={item.name === content ? { color: '#417CFF' } : { color: '#fff' }}>{item.name}</li></div>
+                            return <div key={key} className="flex flex-row items-center gap-1 ">{item.icon && <Image className="mb-8" width={15} height={15} src={"/icon-pdf.svg"} alt={"pdf-icon"} />}<li key={key} onClick={() => { setContent(item.name) }} className="uppercase font-sans text-primary text-xs font-semibold mb-8 cursor-pointer" style={item.name === content ? { color: '#417CFF' } : { color: '#fff' }}>{item.name}</li></div>
                         })}
                     </ul>
                 </div>
