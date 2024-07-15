@@ -15,7 +15,7 @@ const Contact = () => {
         {
             icon: '/icons/icon-contact-email.svg',
             href: 'mailto:info@boldhaven.com',
-            label: 'Phone',
+            label: 'Email',
             link: 'info@boldhaven.com',
             timing: 0.8
         },
@@ -133,7 +133,7 @@ const Contact = () => {
                 transition={{ ease: "easeIn", duration: 0.4, delay: 2.5 }}
             >
                 <div>
-                    <p className="font-bold font-sans text-xs text-white w-[75%] text-center mx-auto md:mb-8 mb-2 lg:text-left lg:mx-0 lg:pb-0">Regulatory Documents</p>
+                    <a href="/regulatory-documents" className="font-bold font-sans text-xs text-white w-[75%] text-center mx-auto md:mb-8 mb-2 lg:text-left lg:mx-0 lg:pb-0">Regulatory Documents</a>
                     <p className="font-light font-sans md:text-xs text-[10px] text-gray md:w-[75%] w-full text-center mx-auto pb-4 lg:text-left lg:mx-0 lg:pb-0">
                         Boldhaven Management LLP is regulated by the United Kingdom Financial
                         Conduct Authority (FCA) and the US Securities and Exchange Commission

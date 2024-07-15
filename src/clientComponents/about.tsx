@@ -40,7 +40,7 @@ const About = () => {
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ ease: "easeInOut", duration: 0.7, delay: 1.6 }}
-                    className="text-sm mt-8 font-sans">Our approach, led by Ronald Sofer (Founder & CIO), is defined by deep fundamental research,a long-term investment horizon and focus on intrinsic value.
+                    className="text-sm mt-8 font-sans">Our approach, led by Ronald Sofer (Founder & CIO), is defined by deep fundamental research, a long-term investment horizon and focus on intrinsic value.
                 </motion.p>
             </div>
         </div>
