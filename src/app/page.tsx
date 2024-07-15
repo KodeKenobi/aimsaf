@@ -83,6 +83,7 @@ const Home = () => {
 
   useEffect(() => {
     const handleWheel = (event: WheelEvent) => {
+      console.log('hit')
       if (isScrollingRef.current) return;
 
       isScrollingRef.current = true;
