@@ -158,7 +158,7 @@ const Home = () => {
 
   return (
     <div ref={containerRef} className="h-screen bg-hero bg-cover overflow-hidden snap-y snap-mandatory">
-      <div ref={navbarRef} className="navbar flex justify-between items-center md:px-20 px-8 h-16 md:h-32 absolute w-full bg-secondary z-20 top-0 left-0 show-navbar">
+      <div ref={navbarRef} className="navbar flex justify-between items-center md:px-20 px-8 h-16 md:h-32 absolute w-full bg-secondary z-20 top-0 left-0 show-navbar overflow-hidden">
         <Navigation />
       </div>
       {sections.map((section, index) => (
