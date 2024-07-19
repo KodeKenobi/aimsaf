@@ -36,7 +36,7 @@ body {
 }
 
 /* Always show the navigation bar on mobile */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .navbar {
     display: flex!important;
     transform: translateY(0)!important;

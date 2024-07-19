@@ -41,8 +41,8 @@ const MobileNav = () => {
             <ul
                 className={
                     isOpen
-                        ? 'fixed lg:hidden left-0 top-0 w-[100%] h-full ease-in-out text-right duration-1000 bg-primary bg-opacity-100 z-[100]'
-                        : 'ease-in-out duration-1000 w-[100%] fixed top-0 text-right bottom-0 left-[-100%] bg-primary bg-opacity-100'
+                        ? 'absolute lg:hidden left-0 top-0 w-[100%] h-screen ease-in-out text-right duration-1000 bg-primary z-[100]'
+                        : 'ease-in-out duration-1000 w-[100%] h-screen fixed top-0 text-right bottom-0 left-[-100%] bg-primary z-[100]'
                 }
             >
                 {/* Mobile Logo */}
@@ -50,46 +50,32 @@ const MobileNav = () => {
                 <div className="h-[120px]" />
 
                 {/* Mobile Navigation Items */}
+                <a href="#home" onClick={() => setIsOpen(false)}>
+                    <li
+                        className=' uppercase tracking-wide font-sans p-7 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
+                    >
+                        HOME
+                    </li>
+                </a>
                 <a href="#about" onClick={() => setIsOpen(false)}>
                     <li
                         className=' uppercase tracking-wide font-sans p-7 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
                     >
-                        About
+                        ABOUT
                     </li>
                 </a>
-                <a href="#approach" onClick={() => setIsOpen(false)}>
+                <a href="#philosophy" onClick={() => setIsOpen(false)}>
                     <li
                         className=' uppercase tracking-wide font-sans p-7 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
                     >
-                        Approach
-                    </li>
-                </a>
-                <a href="#solutions" onClick={() => setIsOpen(false)}>
-                    <li
-                        className=' uppercase tracking-wide font-sans p-7 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
-                    >
-                        Solutions
-                    </li>
-                </a>
-                <a href="#team" onClick={() => setIsOpen(false)}>
-                    <li
-                        className=' uppercase tracking-wide font-sans p-7 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
-                    >
-                        Leadership
-                    </li>
-                </a>
-                <a href="#insights" onClick={() => setIsOpen(false)}>
-                    <li
-                        className=' uppercase tracking-wide font-sans p-7 pr-12   duration-300 cursor-pointer border-gray-600 text-white'
-                    >
-                        Insights
+                        PHILOSOPHY
                     </li>
                 </a>
                 <a href="#contact" onClick={() => setIsOpen(false)}>
                     <li
                         className=' uppercase tracking-wide font-sans p-7 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
                     >
-                        Contact
+                        CONTACT
                     </li>
                 </a>
             </ul>

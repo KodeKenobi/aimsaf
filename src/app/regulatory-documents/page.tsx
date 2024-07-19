@@ -71,7 +71,7 @@ export default function Disclosures() {
                             Boldhaven is committed to excellence, teamwork, ethical behaviour and the pursuit of exceptional outcomes for its clients. From a remuneration perspective, this means that performance is determined through the assessment of various factors that relate to these values, and by making considered and informed decisions that reward effort, attitude and results.
                             <br /><br />
                         </p>
-                        <table width="623">
+                        <table >
                             <tbody>
                                 <tr>
                                     <td width="94">&nbsp;</td>

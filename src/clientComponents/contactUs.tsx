@@ -23,7 +23,7 @@ const Contact = () => {
             icon: '/icons/icon-contact-address.svg',
             href: 'tel:+44 20 8017 4521',
             label: 'Address',
-            link: '+100 Wigmore Street, London W1U 3RN',
+            link: '100 Wigmore Street, London W1U 3RN',
             timing: 1
         },
     ]
@@ -119,7 +119,7 @@ const Contact = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ ease: "easeIn", duration: 0.4, delay: 1.6 }}
                         >
-                            <button className="bg-transparent md:text-sm text-xs text-accent ml-auto" type="button">
+                            <button className="bg-transparent md:text-sm text-xs text-accent ml-auto md:mb-0 mb-2" type="button">
                                 Submit
                             </button>
                         </motion.div>
@@ -127,7 +127,7 @@ const Contact = () => {
                 </div>
             </div >
             <motion.div
-                className="bg-transparent w-full py-6 flex lg:flex-row flex-col items-center justify-between border-[#ffffff15] border-t mt-auto"
+                className="bg-transparent w-full py-6 flex lg:flex-row flex-col items-center justify-between border-[#ffffff15] border-t "
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ ease: "easeIn", duration: 0.4, delay: 2.5 }}
@@ -135,9 +135,9 @@ const Contact = () => {
                 <div className="text-center md:text-left">
                     <a href="/regulatory-documents" className="font-bold font-sans text-xs text-white w-[75%] text-center mx-auto md:mb-8 mb-8 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl">Regulatory Documents</a>
                     <p className="font-light font-sans md:text-xs text-[10px] text-gray md:w-[75%] w-full text-center mx-auto pb-4 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl md:mt-8 mt-8">
-                        Boldhaven Management LLP is regulated by the United Kingdom Financial
-                        Conduct Authority (FCA) and the US Securities and Exchange Commission
-                        (SEC)
+                        Copyright © 2024 Boldhaven Management LLP | All rights reserved
+                        Boldhaven Management LLP is regulated by the United Kingdom Financial Conduct Authority (FCA) and the US Securities and Exchange Commission (SEC)
+
                     </p>
                 </div>
                 <img src={"/boldhaven-logo.svg"} className="md:w-auto w-32" alt="logo" />
