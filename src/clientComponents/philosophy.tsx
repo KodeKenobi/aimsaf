@@ -32,40 +32,43 @@ const Philosophy = () => {
     ]
 
     return (
-        <div className="flex flex-col w-full h-full justify-center relative bg-primary lg:p-20 p-12" id="philosphy">
+        <div className="flex flex-col w-full h-full justify-center relative bg-primary lg:p-24 p-6" id="philosophy">
             <motion.h2
-                className="uppercase tracking-widest text-accent text-sm mb-4 font-sans"
+                className="uppercase tracking-widest text-accent text-sm mb-4 font-sans 4xl:text-2xl"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ ease: "easeInOut", duration: 0.7 }}
             >
                 Philosophy
             </motion.h2>
-            <motion.h3 className="lg:text-[55px] text-[30px] text-white relative z-1 font-serif font-light leading-none "
+            <motion.h3 className="lg:text-[55px] text-[30px] text-white relative z-1 font-serif font-light leading-none 4xl:text-[70px]"
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeInOut", duration: 0.7, delay: 1 }}
             >
                 Consistency through simplicity</motion.h3>
-            <div className="grid grid-cols-1 lg:grid-cols-4 w-full justify-between lg:gap-24 lg:gap-12 gap-6 gap-x-12 mt-10 relative z-10">
-                <motion.div
-                    className="absolute w-[100%] h-[1px] bg-highlight left-0 top-[15%] z-[1] lg:block hidden"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: '100%' }}
-                    transition={{ ease: "easeInOut", duration: 3.2 }}
-                />
+            <div className="grid grid-cols-1 lg:grid-cols-4 w-full justify-between lg:gap-24 lg:gap-6 gap-6 gap-x-12 mt-10 relative z-10 overflow-hidden">
+
                 {data.map((item: any, index: number) => {
                     return (
-                        <div key={index} className="lg:block flex font-sans">
-                            <motion.img src={item.icon}
-                                className="mx-auto lg:mb-10 my-2 lg:mt-6 z-10 relative w-12 h-12 lg:block hidden"
-                                initial={{ opacity: 0, y: -10 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ ease: "easeInOut", duration: 0.6, delay: item.timing }}
-                            />
+                        <div key={index} className="lg:block flex font-sans lg:px-10 ">
+                            <div className="relative">
+                                <motion.img src={item.icon}
+                                    className="mx-auto lg:mb-10 my-2 lg:mt-6 z-10 relative w-12 h-12 lg:block hidden 4xl:w-[100px] 4xl:h-[100px]"
+                                    initial={{ opacity: 0, y: -10 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ ease: "easeInOut", duration: 0.6, delay: item.timing }}
+                                ></motion.img>
+                                <motion.div
+                                    className={`absolute w-[110vw] h-[1px] bg-highlight left-[-39px] top-[calc(50%)] z-[1] ${index == 0 ? 'lg:block' : ''} hidden`}
+                                    initial={{ width: 0 }}
+                                    whileInView={{ width: '100vw' }}
+                                    transition={{ ease: "easeInOut", duration: 4 }}
+                                />
+                            </div>
                             <div>
                                 <motion.p
-                                    className="text-white text-sm mb-2"
+                                    className="text-white text-sm 2xl:text-xl mb-4 4xl:text-2xl"
                                     initial={{ opacity: 0, y: -10 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ ease: "easeInOut", duration: 0.6, delay: item.timing + 0.2 }}
@@ -74,7 +77,7 @@ const Philosophy = () => {
 
                                 </motion.p>
                                 <motion.p
-                                    className="text-white lg:text-sm text-xs"
+                                    className="text-white lg:text-sm 2xl:text-base text-xs 4xl:text-2xl"
                                     initial={{ opacity: 0, y: -5 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ ease: "easeInOut", duration: 0.6, delay: item.timing + 0.4 }}
