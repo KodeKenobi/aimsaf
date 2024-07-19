@@ -14,15 +14,28 @@ export default function Disclosures() {
     let i = 1;
 
     const links = [
-        { name: 'Privacy Policy' },
         { name: "MIFIDPRU 8 Disclosure" },
-        { name: "Terms and Conditions" },
+        { name: 'UK Stewardship Code' },
+        { name: "Shareholder Rights Directive" },
         { name: "Complaints Handling Disclosure" },
-        { name: "Shareholder Rights Directive" }
+        { name: 'Privacy Policy' },
+        { name: "Terms and Conditions" },
     ]
 
     const returnContent = () => {
         switch (content) {
+            case "UK Stewardship Code":
+                return (
+                    <div className="text-white md:pt-24 pt-0">
+                        <p className="text-sm font-bold uppercase mb-10">UK Stewardship Code</p>
+                        <p className="text-sm">
+                            Under Rule 2.2.3R of the Financial Conduct Authority's (“FCA”) Conduct of Business Sourcebook, Boldhaven Management LLP (“Boldhaven” or “the Firm”), to the extent it is managing investments for a professional client (as defined by the FCA), is required to include a disclosure about the nature of its commitment to the UK Financial Reporting Council's Stewardship Code (the "Code") or, where it does not commit to the Code, explain its considered choice based on the Firm’s investment approach. The Code is a voluntary code and sets out a number of principles relating to engagement by investors in UK-listed companies.
+                            <br /><br />
+                            Boldhaven invests in a variety of asset classes in a variety of jurisdictions globally. Whilst Boldhaven generally supports the objectives that underlie the Code, the nature of its investment strategy does not allow it to formally engage with investee companies through voting rights. The Firm has therefore chosen not to commit to the Code at this time.
+                            <br /><br />
+                        </p>
+                    </div>
+                );
             case "MIFIDPRU 8 Disclosure":
                 return (
                     <div className="text-white md:pt-24 pt-0">
@@ -351,7 +364,7 @@ export default function Disclosures() {
 
 
     return <section className="h-full bg-primary">
-        <div className=" h-full w-full lg:p-20 p-10 lg:pb-4 font-sans">
+        <div className=" h-full w-full lg:p-24 p-10 lg:pb-4 font-sans">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 h-full">
                 <div className="menu lg:col-span-1 col-span-4 lg:fixed block">
                     <ul>
@@ -362,10 +375,10 @@ export default function Disclosures() {
                         })}
                     </ul>
                 </div>
-                <div className="col-span-3 lg:col-start-2  lg:pl-10 min-h-[60vh]">
+                <div className="col-span-3 lg:col-start-2  lg:pl-10 min-h-[100vh]">
                     {returnContent()}
                 </div>
-                <div className="z-20 relative col-span-4">
+                {/* <div className="z-20 relative col-span-4">
                     <motion.p
                         initial={{ y: 10, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
@@ -373,7 +386,7 @@ export default function Disclosures() {
                         className="text-center text-[#8E8E8E] mt-4 lg:text-xs text-[8px] font-light p-2">
                         © Copyright 2024 Origin Funding Partners
                     </motion.p>
-                </div>
+                </div> */}
             </div>
         </div>
     </section >
