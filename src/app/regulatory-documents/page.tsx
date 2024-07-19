@@ -336,7 +336,7 @@ export default function Disclosures() {
                         <p className="text-sm">
                             We aim to ensure that we treat our customers fairly at all times. Any complaints will be investigated competently, diligently and impartially, assessed fairly and promptly with respect to the subject matter of the complaint, and whether the complaint should be upheld and what remedial action or redress may be appropriate.
                             <br /><br />
-                            The FCA&apos;s Dispute Resolution (“DISP”) handbook sets out the rules relating to the handling of complaints from eligible complainants and MiFID clients. We have determined that we have no eligible complainants under the DISP rules at present and, as such, we are exempt from FCA rules in this area, however, we could receive MiFID complaints (as defined below).
+                            The FCA&apos;s Dispute Resolution (&quot;DISP&quot;) handbook sets out the rules relating to the handling of complaints from eligible complainants and MiFID clients. We have determined that we have no eligible complainants under the DISP rules at present and, as such, we are exempt from FCA rules in this area, however, we could receive MiFID complaints (as defined below).
                             <br /><br />
                             However, certain consumers could be considered to be eligible complainants under the DISP rules in the future and, as such, we will apply the rules within DISP with respect to those investors.
                             <br /><br />
@@ -374,7 +374,7 @@ export default function Disclosures() {
                             <br />
                             <br />
                         </p>
-                        <p className="text-sm font-bold uppercase mb-10">Financial Ombudsman Service ("FOS")</p>
+                        <p className="text-sm font-bold uppercase mb-10">Financial Ombudsman Service (&quot;FOS&quot;)</p>
                         <p className="text-sm">
                             We are required to provide clear and accessible information about the Financial Ombudsman Service (&apos;FOS&apos;) including its website address.
                             <br /><br />
