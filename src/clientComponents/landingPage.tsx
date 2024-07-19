@@ -15,12 +15,12 @@ const LandingPage = () => {
                 className="absolute bg-primary md:w-[30%] w-[15%] h-full right-0 top-0 bg-opacity-75"
             />
             <motion.h1
-                className="ml-auto lg:w-[45%] 4xl:text-[100px] md:w-[85%] lg:text-[60px] 2xl:text-[69px] md:text-[55px] text-[50px] text-white relative z-1 font-serif font-light lg:leading-[1.2] leading-none lg:mr-20 "
+                className="lg:ml-auto lg:w-[45%] 4xl:text-[100px] md:w-[85%] lg:text-[60px] 2xl:text-[69px] md:text-[55px] w-[90%] text-[40px] text-white relative z-1 font-serif font-light lg:leading-[1.2] leading-none lg:mr-20 "
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeInOut", duration: 0.7, delay: 0.6 }}
             >
-                Boldhaven Management is a fundamental investment manager based in London
+                Boldhaven is a European Investment Manager based in London
             </motion.h1>
             <div className="absolute z-100 sm:bottom-10 bottom-10 md:bottom-[5vw] lg:bottom-[5vw] xl:bottom-[8vw] 2xl:bottom-[10vw] z-10 right-[calc(37%)]">
                 <motion.svg

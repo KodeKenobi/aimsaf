@@ -9,7 +9,7 @@ interface PaginationDotsProps {
 
 const PaginationDots: React.FC<PaginationDotsProps> = ({ total, activeIndex, onDotClick }) => {
     return (
-        <div className="fixed right-10 top-1/2 transform -translate-y-1/2 flex flex-col items-center space-y-4 z-50">
+        <div className="fixed right-10 top-1/2 transform -translate-y-1/2 flex flex-col items-center space-y-4 z-10">
             {Array.from({ length: total }).map((_, index) => (
                 <div
                     key={index}

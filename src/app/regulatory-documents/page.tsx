@@ -58,12 +58,13 @@ export default function Disclosures() {
                         <p className="text-sm">
                             As an SNI MIFIDPRU investment firm, Boldhaven is subject to the basic requirements of the MIFIDPRU Remuneration code. Boldhaven, as an alternatives investment fund manager, is also classified as a collective portfolio management investment firm, and as such, is also subject to the AIFM Remuneration Code. The purpose of the requirements on remuneration are to:
                             <br /><br />
-                            <ul>
+                            <ul className="list-disc">
                                 <li>Promote effective risk management in the long-term interests of the Firm and its clients;</li>
                                 <li>Ensure alignment between risk and individual reward;</li>
                                 <li>Support positive behaviours and healthy firm cultures; and</li>
                                 <li>Discourage behaviours that can lead to misconduct and poor customer outcomes.</li>
                             </ul>
+                            <br /><br />
                             The objective of Boldhaven&apos;s remuneration policies and practices are to establish, implement and maintain a culture that is consistent with, and promotes, sound and effective risk management and does not encourage risk-taking which is inconsistent with the risk profile of the Firm and the services that it provides to its clients.
                             <br /><br />
                             In addition, Boldhaven recognises that remuneration is a key component in how the Firm attracts, motivates and retains quality staff and sustains consistently high levels of performance, productivity and results. As such, the Firm&apos;s remuneration philosophy is also grounded in the belief that its people are the most important asset and greatest competitive advantage.
@@ -71,7 +72,18 @@ export default function Disclosures() {
                             Boldhaven is committed to excellence, teamwork, ethical behaviour and the pursuit of exceptional outcomes for its clients. From a remuneration perspective, this means that performance is determined through the assessment of various factors that relate to these values, and by making considered and informed decisions that reward effort, attitude and results.
                             <br /><br />
                         </p>
-                        <table width="623">
+                        <br />
+                        <br />
+                        <p className="text-sm font-bold uppercase mb-10">Characteristics of the remuneration policy and practices</p>
+                        <p className="text-sm">
+                            Remuneration at Boldhaven is made up of fixed and variable components. The fixed component is set in line with market competitiveness at a level to attract and retain skilled staff. Variable remuneration are paid on a discretionary basis and take into consideration the Firm’s financial performance, and the financial and non-financial performance of the individual in contributing to the Firm’s success. All staff members are eligible to receive variable remuneration.
+                            <br /><br />
+                            The below table summarises the financial and non-financial criteria of performance used across the Firm in assessing the level of variable remuneration to be paid:
+                            <br /><br />
+                        </p>
+                        <br />
+                        <br />
+                        <table style={{ width: '100%', marginTop: 20, marginBottom: 20 }}>
                             <tbody>
                                 <tr>
                                     <td width="94">&nbsp;</td>
@@ -120,6 +132,7 @@ export default function Disclosures() {
                                 </tr>
                             </tbody>
                         </table>
+                        <br />< br />
                         <p className="text-sm mt-10">
                             The fixed and variable components of remuneration are appropriately balanced: the fixed component represents a sufficiently high proportion of the total remuneration to enable the operation of a fully flexible policy on variable remuneration. This allows for the possibility of paying no variable remuneration component, which the Firm would do in certain situations, such as where the Firm&apos;s profitability performance is constrained, or where there is a risk that the Firm may not be able to meet its capital or liquidity regulatory requirements.
                         </p>
@@ -128,7 +141,7 @@ export default function Disclosures() {
                             The Governing Body is responsible for setting and overseeing the implementation of Boldhaven&apos;s remuneration policy and practices. In order to fulfil its responsibilities, the Governing Body:
                             <br />
                             <br />
-                            <ul>
+                            <ul className="list-disc">
                                 <li>Is appropriately staffed to enable it to exercise competent and independent judgment on remuneration policies and practices and the incentives created for managing risk, capital and liquidity;</li>
                                 <li>Prepares decisions regarding remuneration, including decisions which have implications for the risk and risk management of the Firm;</li>
                                 <li>Ensures that the remuneration policy and practices take into account the public interest and the long-term interests of shareholders, investors and other stakeholders in the Firm; and</li>
@@ -150,12 +163,13 @@ export default function Disclosures() {
                     <div className="text-white md:pt-24 pt-0">
                         <p className="text-sm font-bold uppercase mb-10">Terms and Conditions</p>
                         <p className="text-sm">
-                            This web site is provided by Boldhaven Management LLP.
-                            This web site is subject to international copyright laws and other intellectual property rights with all rights reserved. No information contained in this web site, any part of this web site, or associated documents (together the “Information”), may be redistributed in whole or in part, stored securely in a retrieval system, modified, linked into, republished, uploaded, transmitted in any form or by any means electronic or mechanical, or by photocopying, recording or otherwise without the express prior written permission of Boldhaven Management LLP.
+                            This website is provided by Boldhaven Management LLP.
                             <br /><br />
-                            The Information is confidential and is not intended to influence you in making any investment decisions and should not be considered as advice or a recommendation to invest. Any Information in this web site may not be suitable for all investors and investors must make their own investment decisions using their own independent advisors and relevant offering material. Any investment decisions must be based upon an investor&apos;s specific financial situation and investment objectives and should be based solely on the information in the relevant offering memorandum. Income from or the price or value of any financial instruments may rise or fall. Past performance is not necessarily indicative of future results.
+                            This website is subject to international copyright laws and other intellectual property rights with all rights reserved. No information contained in this website, any part of this website, or associated documents (together the “Information”), may be redistributed in whole or in part, stored securely in a retrieval system, modified, linked into, republished, uploaded, transmitted in any form or by any means electronic or mechanical, or by photocopying, recording or otherwise without the express prior written permission of Boldhaven Management LLP.
                             <br /><br />
-                            The content of this web site is not intended, and must not be construed, as an offer of, or a solicitation of an offer to purchase, any investments in any jurisdiction where such offer or solicitation would be unlawful. In particular, this web site is not intended as marketing of any fund in any member state of the European Economic Area for the purposes of the Directive 2011/61/EU on Alternative Investment Fund Managers.
+                            The Information is confidential and is not intended to influence you in making any investment decisions and should not be considered as advice or a recommendation to invest. Any Information in this website may not be suitable for all investors and investors must make their own investment decisions using their own independent advisors and relevant offering material. Any investment decisions must be based upon an investor&apos;s specific financial situation and investment objectives and should be based solely on the information in the relevant offering memorandum. Income from or the price or value of any financial instruments may rise or fall. <strong>Past performance is not necessarily indicative of future results.</strong>
+                            <br /><br />
+                            The content of this website is not intended, and must not be construed, as an offer of, or a solicitation of an offer to purchase, any investments in any jurisdiction where such offer or solicitation would be unlawful. In particular, this website is not intended as marketing of any fund in any member state of the European Economic Area for the purposes of the Directive 2011/61/EU on Alternative Investment Fund Managers.
                             <br /><br />
                             The investment products and services described herein have not been and will not be registered in the United States with the Securities and Exchange Commission.  Information on this website shall not be construed as an offer or public offering of shares in any fund nor does it constitute a general solicitation, general advertising or direct selling effort under the Securities Act of 1933 of the United States.
                             <br /><br />
@@ -196,11 +210,11 @@ export default function Disclosures() {
                         <p className="text-sm">
                             Your privacy is very important to us. This notice (“Privacy Notice”) is provided by Boldhaven Management LLP (“we” or “us”) and sets out our policies with respect to the collection, sharing and use of personal information.
                             <br /><br />
-                            How we collect information about you
+                            <strong>How we collect information about you</strong>
                             <br /><br />
                             We may collect personal data about you through:
                             <br /><br />
-                            <ul>
+                            <ul className="list-disc">
                                 <li>information provided directly to us by you, or another person on your behalf, through our website, by email or post, or in person;</li>
                                 <li>information that we obtain in relation to any transactions between you and us;</li>
                                 <li>recording and monitoring of telephone conversations and electronic communications with you as described below; or</li>
@@ -238,7 +252,7 @@ export default function Disclosures() {
                         <p className="text-sm font-bold mb-10">Do we share your personal information with third parties?</p>
                         <p className="text-sm mb-10">
                             We may (to the extent relevant to the purpose for which we collect your information), share your personal data with third parties, such as:
-                            <ul>
+                            <ul className="list-disc">
                                 <li>our affiliates or other entities that are part of our group or with the funds we manage;</li>
                                 <li>any person to whom we have a right or obligation to disclose personal data, or where we determine that disclosure is necessary to protect or defend our rights or property, including with regulators, courts of law, governmental, regulatory or law enforcement agencies;</li>
                                 <li>our internet, IT, telecommunications and other service providers, including legal advisers, accountants, and providers of customer relationship management tools;</li>
@@ -265,7 +279,7 @@ export default function Disclosures() {
                         <p className="text-sm mb-10">
                             You have certain rights under Data Protection Law in respect of the personal data we hold about you and which you may exercise. These rights are:
                             <br /><br />
-                            <ul>
+                            <ul className="list-disc">
                                 <li>to request access to your information;</li>
                                 <li>to request rectification of inaccurate or incomplete information;</li>
                                 <li>to request erasure of your information (a “right to be forgotten”);</li>
@@ -290,18 +304,20 @@ export default function Disclosures() {
                         <p className="text-sm mb-10">
                             To enable us to monitor and improve our website, we may gather certain information about you when you use it, including details of your operating system, browser version, domain name and IP address, and the details of the website you came from.
                             <br /><br />
-                            We may send text files (e.g., “cookies” or other cached files) or images to your web browser for technical convenience to store information on your computer. For instance, we may use a session cookie to store form information that you have entered so that you do not have to enter such information again. We may use information stored in such text files and images to customise your experience on this website and to monitor use of this website. You may set your browser to notify you when you receive a cookie. Many web browsers also allow you to block cookies. If you block cookies you may not be able to access certain parts of this website. You can disable cookies from your computer system by following the instructions on your browser or at www.allaboutcookies.org.
+                            We may send text files (e.g., “cookies” or other cached files) or images to your web browser for technical convenience to store information on your computer. For instance, we may use a session cookie to store form information that you have entered so that you do not have to enter such information again. We may use information stored in such text files and images to customise your experience on this website and to monitor use of this website. You may set your browser to notify you when you receive a cookie. Many web browsers also allow you to block cookies. If you block cookies you may not be able to access certain parts of this website. You can disable cookies from your computer system by following the instructions on your browser or at <a href="https://www.allaboutcookies.org">www.allaboutcookies.org</a>.
                             <br /><br />
                             Google Analytics is also used to track website trends without identifying individual visitors. The cookie used by Google Analytics stores information such as what time the current visit occurred, whether the visitor has been to the site before, and what site referred the visitor to our website. Google Analytics generates statistical and other information about website use by means of cookies, which are stored on users&apos; computers.
+                            <br /><br />
                             The information generated relating to our website is used to create reports about the use of the website.
-                            Google will store and use this information. Google&apos;s privacy policy is available at http://www.google.com/privacypolicy.html. If you would like to opt out of being tracked by Google Analytics across all websites please visit http://tools.google.com/dlpage/gaoptout.
+                            <br /><br />
+                            Google will store and use this information. Google&apos;s privacy policy is available at <a href="http://www.google.com/privacypolicy.html">http://www.google.com/privacypolicy.html</a>. If you would like to opt out of being tracked by Google Analytics across all websites please visit <a href="http://tools.google.com/dlpage/gaoptout">http://tools.google.com/dlpage/gaoptout</a>.
                             <br /><br />
                         </p>
                         <p className="text-sm font-bold mb-10">Recording and monitoring of communications</p>
                         <p className="text-sm mb-10">
                             We may record and monitor telephone conversations and electronic communications with you for the purposes of:
                             <br /><br />
-                            <ul>
+                            <ul className="list-disc">
                                 <li>ascertaining the details of instructions given, the terms on which any transaction was executed or any other</li>
                                 <li>relevant circumstances;</li>
                                 <li>ensuring compliance with our regulatory obligations; or</li>
@@ -320,7 +336,7 @@ export default function Disclosures() {
                         <p className="text-sm">
                             We aim to ensure that we treat our customers fairly at all times. Any complaints will be investigated competently, diligently and impartially, assessed fairly and promptly with respect to the subject matter of the complaint, and whether the complaint should be upheld and what remedial action or redress may be appropriate.
                             <br /><br />
-                            The FCA&apos;s Dispute Resolution (“DISP”) handbook sets out the rules relating to the handling of complaints from eligible complainants and MiFID clients. We have determined that we have no eligible complainants under the DISP rules at present and, as such, we are exempt from FCA rules in this area, however, we could receive MiFID complaints (as defined below).
+                            The FCA&apos;s Dispute Resolution (&quot;DISP&quot;) handbook sets out the rules relating to the handling of complaints from eligible complainants and MiFID clients. We have determined that we have no eligible complainants under the DISP rules at present and, as such, we are exempt from FCA rules in this area, however, we could receive MiFID complaints (as defined below).
                             <br /><br />
                             However, certain consumers could be considered to be eligible complainants under the DISP rules in the future and, as such, we will apply the rules within DISP with respect to those investors.
                             <br /><br />
@@ -331,15 +347,15 @@ export default function Disclosures() {
                         <p className="text-sm">
                             We define complaints as follows with respect to the two categories of complainants:
                             <br /><br />
-                            Eligible complaint -defined by the FCA as meaning &apos;any oral or written expression of dissatisfaction, whether justified or not, from, or on behalf of, a person about the provision of, or failure to provide, a financial service which (a) alleges that the complainant has suffered (or may suffer) financial loss, material distress of material inconvenience; and (b) relates to an activity of that respondent, or any other respondent with whom that respondent has some connection in marketing or providing financial services or products, which comes under the jurisdiction of the Financial Ombudsman Service (“FOS”).
+                            <strong>Eligible complaint</strong> -defined by the FCA as meaning &apos;any oral or written expression of dissatisfaction, whether justified or not, from, or on behalf of, a person about the provision of, or failure to provide, a financial service which (a) alleges that the complainant has suffered (or may suffer) financial loss, material distress of material inconvenience; and (b) relates to an activity of that respondent, or any other respondent with whom that respondent has some connection in marketing or providing financial services or products, which comes under the jurisdiction of the Financial Ombudsman Service (“FOS”).
                             <br /><br />
-                            MiFID complaint - defined as &apos;any oral or written expression of dissatisfaction, whether justified or not, from, or on behalf of, a person about the provision of, or failure to provide, a financial service or a redress determination which alleges that the complainant has suffered or may suffer financial loss, material distress or material inconvenience&apos;. This does not come under the jurisdiction of FOS.
+                            <strong>MiFID complaint</strong> - defined as &apos;any oral or written expression of dissatisfaction, whether justified or not, from, or on behalf of, a person about the provision of, or failure to provide, a financial service or a redress determination which alleges that the complainant has suffered or may suffer financial loss, material distress or material inconvenience&apos;. This does not come under the jurisdiction of FOS.
                             <br /><br />
                             Upon receipt of a Complaint, as defined above, the Chief Operating Officer will ensure that eligible complainants are provided a copy of this document, which constitutes our complaints handling policy, when acknowledging a complaint.
                             <br /><br />
-                            We will endeavor to communicate with you clearly and in plain language that is easy to understand and reply to your complaint without undue delay. As soon as we have made the relevant enquiries and reviewed your complaint we will write to you. If we have reasonable grounds to be satisfied that another respondent may be solely or jointly responsible for the matter alleged in your complaint, we may promptly forward the complaint, or the relevant part of it, in writing to that other respondent. We will inform you promptly in a final response of the reason for forwarding the complaint, including the other respondent&apos;s contact details. Where jointly responsible for the fault alleged in the complaint, we will comply with own obligations under the DISP rules in respect of that part of the complaint we have not forwarded.
+                            We will endeavour to communicate with you clearly and in plain language that is easy to understand and reply to your complaint without undue delay. As soon as we have made the relevant enquiries and reviewed your complaint we will write to you. If we have reasonable grounds to be satisfied that another respondent may be solely or jointly responsible for the matter alleged in your complaint, we may promptly forward the complaint, or the relevant part of it, in writing to that other respondent. We will inform you promptly in a final response of the reason for forwarding the complaint, including the other respondent&apos;s contact details. Where jointly responsible for the fault alleged in the complaint, we will comply with own obligations under the DISP rules in respect of that part of the complaint we have not forwarded.
                             <br /><br />
-                            We will endeavor to write to you within eight weeks.
+                            We will endeavour to write to you within eight weeks.
                             <br /><br />
                             All complainants should contact the Chief Operating Officer.
                             <br /><br />
@@ -356,6 +372,20 @@ export default function Disclosures() {
                             <br />
                             Email: <a href="mailto:0208 017 4517">  Aschaeffer@boldhaven.com</a>
                             <br />
+                            <br />
+                        </p>
+                        <p className="text-sm font-bold uppercase mb-10">Financial Ombudsman Service (&quot;FOS&quot;)</p>
+                        <p className="text-sm">
+                            We are required to provide clear and accessible information about the Financial Ombudsman Service (&apos;FOS&apos;) including its website address.
+                            <br /><br />
+                            If your complaint is not resolved by us to your satisfaction, and if your complaint falls within the jurisdiction of the FOS, then you may take your complaint to the FOS.
+                            <br /><br />
+                            If a business and a customer can&apos;t resolve a complaint themselves, the FOS can give an unbiased answer about what&apos;s happened. If the FOS decide someone&apos;s been treated unfairly, they have legal powers to put things right. In order to contact the Financial Ombudsman Service or obtain details of the compensation scheme you should:
+                            <br /><br />
+                            Write to- The Financial Ombudsman Service, Exchange Tower, London, E14 9SR; or
+                            Telephone 0300 123 9 123 or 0800 023 4567; or
+                            Visit: http://www.financial-ombudsman.org.uk/default.htm
+                            <br /><br />
                         </p>
                     </div>
                 );
