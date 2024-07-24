@@ -41,7 +41,7 @@ const Philosophy = () => {
             >
                 Philosophy
             </motion.h2>
-            <motion.h3 className="lg:text-[55px] text-[24px] text-white relative z-1 font-serif font-light leading-none 4xl:text-[70px]"
+            <motion.h3 className="md:text-[55px] 4xl:text-[80px] text-[24px] leading-none text-white font-serif mb-4"
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeInOut", duration: 0.7, delay: 1 }}
@@ -77,7 +77,7 @@ const Philosophy = () => {
 
                                 </motion.p>
                                 <motion.p
-                                    className="text-white lg:text-sm 2xl:text-base text-[10px] 4xl:text-2xl"
+                                    className="text-white lg:text-sm 2xl:text-base text-[10px] 4xl:text-2xl w-[90%] lg:w-full"
                                     initial={{ opacity: 0, y: -5 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ ease: "easeInOut", duration: 0.6, delay: item.timing + 0.4 }}

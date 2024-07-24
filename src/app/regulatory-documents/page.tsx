@@ -83,7 +83,7 @@ export default function Disclosures() {
                         </p>
                         <br />
                         <br />
-                        <table style={{ width: '100%', marginTop: 20, marginBottom: 20 }}>
+                        <table className="text-sm " style={{ width: '100%', marginTop: 20, marginBottom: 20 }}>
                             <tbody>
                                 <tr>
                                     <td width="94">&nbsp;</td>
@@ -207,7 +207,7 @@ export default function Disclosures() {
                 return (
                     <div className="text-white md:pt-24 pt-0">
                         <p className="text-sm font-bold uppercase mb-10">Privacy Policy</p>
-                        <p className="text-sm">
+                        <p className="text-sm mb-10">
                             Your privacy is very important to us. This notice (“Privacy Notice”) is provided by Boldhaven Management LLP (“we” or “us”) and sets out our policies with respect to the collection, sharing and use of personal information.
                             <br /><br />
                             <strong>How we collect information about you</strong>
@@ -332,7 +332,7 @@ export default function Disclosures() {
             case "Complaints Handling Disclosure":
                 return (
                     <div className="text-white md:pt-24 pt-0">
-                        <p className="text-sm font-bold uppercase mb-10">Objective Aand General Policy</p>
+                        <p className="text-sm font-bold uppercase mb-10">Objective and General Policy</p>
                         <p className="text-sm">
                             We aim to ensure that we treat our customers fairly at all times. Any complaints will be investigated competently, diligently and impartially, assessed fairly and promptly with respect to the subject matter of the complaint, and whether the complaint should be upheld and what remedial action or redress may be appropriate.
                             <br /><br />
@@ -384,7 +384,8 @@ export default function Disclosures() {
                             <br /><br />
                             Write to- The Financial Ombudsman Service, Exchange Tower, London, E14 9SR; or
                             Telephone 0300 123 9 123 or 0800 023 4567; or
-                            Visit: http://www.financial-ombudsman.org.uk/default.htm
+                            Visit: <a href="http://www.financial-ombudsman.org.uk/default.htm">http://www.financial-ombudsman.org.uk/default.htm</a>
+
                             <br /><br />
                         </p>
                     </div>
@@ -405,7 +406,7 @@ export default function Disclosures() {
                         })}
                     </ul>
                 </div>
-                <div className="col-span-3 lg:col-start-2  lg:pl-10 min-h-[100vh]">
+                <div className="col-span-4 lg:col-start-2  lg:pl-10 min-h-[100vh]">
                     {returnContent()}
                 </div>
                 {/* <div className="z-20 relative col-span-4">
