@@ -78,6 +78,11 @@ const MobileNav = () => {
                         CONTACT
                     </li>
                 </a>
+                <p className="md:hidden block font-light font-sans md:text-xs text-[10px] text-gray md:w-[75%] w-full text-center mx-auto pb-4 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl md:mt-8 mt-[50%] w-[80%]">
+                    Copyright © 2024 Boldhaven Management LLP | All rights reserved
+                    Boldhaven Management LLP is regulated by the United Kingdom Financial Conduct Authority (FCA) and the US Securities and Exchange Commission (SEC)
+
+                </p>
             </ul>
         </>
     );

@@ -30,7 +30,7 @@ const Contact = () => {
 
     return (
         <div className="flex flex-col w-full h-full justify-baseline relative bg-contact bg-cover lg:p-24 p-6 pb-0 lg:pb-0" id="contact">
-            <div className="grid md:grid-cols-2 grid-cols-1 mt-auto">
+            <div className="grid md:grid-cols-2 grid-cols-1 md:my-auto mt-auto my-0 ">
                 <div>
                     <motion.h2
                         className="uppercase tracking-widest text-accent md:text-sm text-xs mb-4 font-sans 4xl:text-2xl"
@@ -41,7 +41,7 @@ const Contact = () => {
                         Contact
                     </motion.h2>
                     <motion.h3
-                        className="md:text-[55px] text-[30px] text-white relative z-1 font-serif font-light leading-none md:mb-14 mb-4 4xl:text-[70px]"
+                        className="md:text-[55px] text-[30px] text-white relative z-1 font-serif font-light leading-none md:mb-14 mb-8 4xl:text-[70px]"
                         initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ ease: "easeInOut", duration: 0.7, delay: 1 }}
@@ -77,7 +77,7 @@ const Contact = () => {
                     <form className="w-full font-sans">
                         <div className="flex flex-wrap -mx-3 mb-6">
                             <motion.div
-                                className="w-full md:w-1/2 px-3 mb-6 md:mb-0"
+                                className="w-1/2 px-3  md:mb-0"
                                 initial={{ opacity: 0, x: 20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ ease: "easeIn", duration: 0.4, delay: 1 }}
@@ -85,7 +85,7 @@ const Contact = () => {
                                 <input className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 font-sans md:text-sm text-xs py-3 4xl:text-2xl" id="name" type="text" placeholder="Name" />
                             </motion.div>
                             <motion.div
-                                className="w-full md:w-1/2 px-3 mb-6 md:mb-0"
+                                className="w-1/2 px-3 md:mb-0"
                                 initial={{ opacity: 0, x: 20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ ease: "easeIn", duration: 0.4, delay: 1 }}
@@ -95,7 +95,7 @@ const Contact = () => {
                         </div>
                         <div className="flex flex-wrap -mx-3 mb-6">
                             <motion.div
-                                className="w-full md:w-2/2 px-3 mb-6 md:mb-0"
+                                className="w-full md:w-2/2 px-3 md:mb-0"
                                 initial={{ opacity: 0, x: 20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ ease: "easeIn", duration: 0.4, delay: 1.2 }}
@@ -105,7 +105,7 @@ const Contact = () => {
                         </div>
                         <div className="flex flex-wrap -mx-3 mb-6">
                             <motion.div
-                                className="w-full md:w-2/2 px-3 mb-6 md:mb-0"
+                                className="w-full md:w-2/2 px-3  md:mb-0"
                                 initial={{ opacity: 0, x: 20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ ease: "easeIn", duration: 0.4, delay: 1.4 }}
@@ -119,7 +119,7 @@ const Contact = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ ease: "easeIn", duration: 0.4, delay: 1.6 }}
                         >
-                            <button className="bg-transparent md:text-sm text-xs text-accent ml-auto md:mb-0 mb-2" type="button">
+                            <button className="bg-transparent md:text-sm text-xs text-accent ml-auto md:mb-0 mb-2 4xl:text-2xl" type="button">
                                 Submit
                             </button>
                         </motion.div>
@@ -132,15 +132,15 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ ease: "easeIn", duration: 0.4, delay: 2.5 }}
             >
-                <div className="text-center md:text-left">
-                    <a href="/regulatory-documents" className="font-bold font-sans text-xs text-white w-[75%] text-center mx-auto md:mb-8 mb-8 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl">Regulatory Documents</a>
-                    <p className="font-light font-sans md:text-xs text-[10px] text-gray md:w-[75%] w-full text-center mx-auto pb-4 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl md:mt-8 mt-8">
+                <div className="text-center lg:text-left">
+                    <a href="/regulatory-documents" className="font-bold font-sans text-xs text-white w-[75%] text-center mx-auto md:mb-8 mb-8 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl ">Regulatory Documents</a>
+                    <p className="md:block hidden font-light font-sans md:text-xs text-[10px] text-gray md:w-[75%] w-full text-center mx-auto pb-4 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl md:mt-8 mt-8">
                         Copyright © 2024 Boldhaven Management LLP | All rights reserved
                         Boldhaven Management LLP is regulated by the United Kingdom Financial Conduct Authority (FCA) and the US Securities and Exchange Commission (SEC)
 
                     </p>
                 </div>
-                <img src={"/boldhaven-logo.svg"} className="md:w-auto w-32" alt="logo" />
+                <img src={"/boldhaven-logo.svg"} className="md:w-auto w-32 mt-8 md:mt-0" alt="logo" />
             </motion.div>
         </div >
     );
