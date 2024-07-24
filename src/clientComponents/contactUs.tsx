@@ -1,15 +1,18 @@
 'use client'
 
 import { motion } from "framer-motion";
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+import axios from 'axios';
 
 const Contact = () => {
 
     const data = [
         {
             icon: '/icons/icon-contact-phone.svg',
-            href: 'tel:+44 20 8017 4521',
+            href: 'tel:+44 20 8017 4521',
             label: 'Phone',
-            link: '+44 20 8017 4521',
+            link: '+44 20 8017 4521',
             timing: 0.6
         },
         {
@@ -21,12 +24,32 @@ const Contact = () => {
         },
         {
             icon: '/icons/icon-contact-address.svg',
-            href: 'tel:+44 20 8017 4521',
+            href: 'tel:+44 20 8017 4521',
             label: 'Address',
             link: '100 Wigmore Street, London W1U 3RN',
             timing: 1
         },
-    ]
+    ];
+
+    const validationSchema = Yup.object({
+        name: Yup.string().required('Name is required'),
+        surname: Yup.string().required('Surname is required'),
+        email: Yup.string().email('Invalid email address').required('Email is required'),
+        message: Yup.string().required('Message is required')
+    });
+
+    const handleSubmit = async (values: any, { setSubmitting, resetForm }: any) => {
+        try {
+            await axios.post('/api/contact', values);
+            alert('Message sent successfully');
+            resetForm();
+        } catch (error) {
+            console.error('Error sending email:', error);
+            alert('Failed to send message');
+        } finally {
+            setSubmitting(false);
+        }
+    };
 
     return (
         <div className="flex flex-col w-full h-full justify-baseline relative bg-contact bg-cover lg:p-24 p-6 pb-0 lg:pb-0" id="contact">
@@ -49,85 +72,123 @@ const Contact = () => {
                         Get in touch
                     </motion.h3>
                     <div className="flex flex-col md:gap-6 gap-4 mb-10 font-sans">
-                        {data.map((item: any, index: number) => {
-                            return (
-                                <div key={index} className="flex items-center">
-                                    <motion.img
-                                        src={item.icon}
-                                        className="mr-16 md:w-auto w-12 4xl:w-28"
-                                        initial={{ opacity: 0, x: -20 }}
-                                        whileInView={{ opacity: 1, x: 0 }}
-                                        transition={{ ease: "easeInOut", duration: 0.5, delay: item.timing }}
-                                    />
-                                    <motion.div
-                                        className="flex flex-col"
-                                        initial={{ opacity: 0, x: -20 }}
-                                        whileInView={{ opacity: 1, x: 0 }}
-                                        transition={{ ease: "easeInOut", duration: 0.5, delay: item.timing + 0.2 }}
-                                    >
-                                        <p className="text-white md:text-sm text-xs font-semibold mb-2 4xl:text-2xl">{item.label}</p>
-                                        <a className="text-white text-xs 4xl:text-2xl" href={item.href}>{item.link}</a>
-                                    </motion.div>
-                                </div>
-                            )
-                        })}
+                        {data.map((item, index) => (
+                            <div key={index} className="flex items-center">
+                                <motion.img
+                                    src={item.icon}
+                                    className="mr-16 md:w-auto w-12 4xl:w-28"
+                                    initial={{ opacity: 0, x: -20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ ease: "easeInOut", duration: 0.5, delay: item.timing }}
+                                />
+                                <motion.div
+                                    className="flex flex-col"
+                                    initial={{ opacity: 0, x: -20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ ease: "easeInOut", duration: 0.5, delay: item.timing + 0.2 }}
+                                >
+                                    <p className="text-white md:text-sm text-xs font-semibold mb-2 4xl:text-2xl">{item.label}</p>
+                                    <a className="text-white text-xs 4xl:text-2xl" href={item.href}>{item.link}</a>
+                                </motion.div>
+                            </div>
+                        ))}
                     </div>
                 </div>
-                <div className="w-full flex justify-center items-center ">
-                    <form className="w-full font-sans">
-                        <div className="flex flex-wrap -mx-3 mb-6">
-                            <motion.div
-                                className="w-1/2 px-3  md:mb-0"
-                                initial={{ opacity: 0, x: 20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ ease: "easeIn", duration: 0.4, delay: 1 }}
-                            >
-                                <input className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 font-sans md:text-sm text-xs py-3 4xl:text-2xl" id="name" type="text" placeholder="Name" />
-                            </motion.div>
-                            <motion.div
-                                className="w-1/2 px-3 md:mb-0"
-                                initial={{ opacity: 0, x: 20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ ease: "easeIn", duration: 0.4, delay: 1 }}
-                            >
-                                <input className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 md:text-sm text-xs py-3 4xl:text-2xl" id="surname" type="text" placeholder="Surname" />
-                            </motion.div>
-                        </div>
-                        <div className="flex flex-wrap -mx-3 mb-6">
-                            <motion.div
-                                className="w-full md:w-2/2 px-3 md:mb-0"
-                                initial={{ opacity: 0, x: 20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ ease: "easeIn", duration: 0.4, delay: 1.2 }}
-                            >
-                                <input className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 md:text-sm text-xs py-3 4xl:text-2xl" id="email" type="email" placeholder="Email" />
-                            </motion.div>
-                        </div>
-                        <div className="flex flex-wrap -mx-3 mb-6">
-                            <motion.div
-                                className="w-full md:w-2/2 px-3  md:mb-0"
-                                initial={{ opacity: 0, x: 20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ ease: "easeIn", duration: 0.4, delay: 1.4 }}
-                            >
-                                <textarea className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 md:text-sm text-xs py-3 4xl:text-2xl" id="message" placeholder="Message"></textarea>
-                            </motion.div>
-                        </div>
-                        <motion.div
-                            className="flex items-center justify-between"
-                            initial={{ opacity: 0, x: 20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ ease: "easeIn", duration: 0.4, delay: 1.6 }}
-                        >
-                            <button className="bg-transparent md:text-sm text-xs text-accent ml-auto md:mb-0 mb-2 4xl:text-2xl" type="button">
-                                Submit
-                            </button>
-                        </motion.div>
-                    </form>
+                <div className="w-full flex justify-center items-center">
+                    <Formik
+                        initialValues={{ name: '', surname: '', email: '', message: '' }}
+                        validationSchema={validationSchema}
+                        onSubmit={handleSubmit}
+                    >
+                        {({ isSubmitting }) => (
+                            <Form className="w-full font-sans">
+                                <div className="flex flex-wrap -mx-3 mb-6">
+                                    <motion.div
+                                        className="w-1/2 px-3 md:mb-0"
+                                        initial={{ opacity: 0, x: 20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ ease: "easeIn", duration: 0.4, delay: 1 }}
+                                    >
+                                        <Field
+                                            className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 font-sans md:text-sm text-xs py-3 4xl:text-2xl"
+                                            id="name"
+                                            name="name"
+                                            type="text"
+                                            placeholder="Name"
+                                        />
+                                        <ErrorMessage name="name" component="div" className="text-red-500 text-xs mt-1" />
+                                    </motion.div>
+                                    <motion.div
+                                        className="w-1/2 px-3 md:mb-0"
+                                        initial={{ opacity: 0, x: 20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ ease: "easeIn", duration: 0.4, delay: 1 }}
+                                    >
+                                        <Field
+                                            className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 md:text-sm text-xs py-3 4xl:text-2xl"
+                                            id="surname"
+                                            name="surname"
+                                            type="text"
+                                            placeholder="Surname"
+                                        />
+                                        <ErrorMessage name="surname" component="div" className="text-red-500 text-xs mt-1" />
+                                    </motion.div>
+                                </div>
+                                <div className="flex flex-wrap -mx-3 mb-6">
+                                    <motion.div
+                                        className="w-full md:w-2/2 px-3 md:mb-0"
+                                        initial={{ opacity: 0, x: 20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ ease: "easeIn", duration: 0.4, delay: 1.2 }}
+                                    >
+                                        <Field
+                                            className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 md:text-sm text-xs py-3 4xl:text-2xl"
+                                            id="email"
+                                            name="email"
+                                            type="email"
+                                            placeholder="Email"
+                                        />
+                                        <ErrorMessage name="email" component="div" className="text-red-500 text-xs mt-1" />
+                                    </motion.div>
+                                </div>
+                                <div className="flex flex-wrap -mx-3 mb-6">
+                                    <motion.div
+                                        className="w-full md:w-2/2 px-3 md:mb-0"
+                                        initial={{ opacity: 0, x: 20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ ease: "easeIn", duration: 0.4, delay: 1.4 }}
+                                    >
+                                        <Field
+                                            className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 md:text-sm text-xs py-3 4xl:text-2xl"
+                                            id="message"
+                                            name="message"
+                                            as="textarea"
+                                            placeholder="Message"
+                                        />
+                                        <ErrorMessage name="message" component="div" className="text-red-500 text-xs mt-1" />
+                                    </motion.div>
+                                </div>
+                                <motion.div
+                                    className="flex items-center justify-between"
+                                    initial={{ opacity: 0, x: 20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ ease: "easeIn", duration: 0.4, delay: 1.6 }}
+                                >
+                                    <button
+                                        className="bg-transparent md:text-sm text-xs text-accent ml-auto md:mb-0 mb-2 4xl:text-2xl"
+                                        type="submit"
+                                        disabled={isSubmitting}
+                                    >
+                                        Submit
+                                    </button>
+                                </motion.div>
+                            </Form>
+                        )}
+                    </Formik>
                 </div>
-            </div >
+            </div>
             <motion.div
-                className="bg-transparent w-full py-6 flex lg:flex-row flex-col items-center justify-between border-[#ffffff15] border-t "
+                className="bg-transparent w-full py-6 flex lg:flex-row flex-col items-center justify-between border-[#ffffff15] border-t"
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ ease: "easeIn", duration: 0.4, delay: 2.5 }}
@@ -137,12 +198,11 @@ const Contact = () => {
                     <p className="md:block hidden font-light font-sans md:text-xs text-[10px] text-gray md:w-[75%] w-full text-center mx-auto pb-4 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl md:mt-8 mt-8">
                         Copyright © 2024 Boldhaven Management LLP | All rights reserved
                         Boldhaven Management LLP is regulated by the United Kingdom Financial Conduct Authority (FCA) and the US Securities and Exchange Commission (SEC)
-
                     </p>
                 </div>
                 <img src={"/boldhaven-logo.svg"} className="md:w-auto w-32 mt-8 md:mt-0" alt="logo" />
             </motion.div>
-        </div >
+        </div>
     );
 };
 

@@ -20,10 +20,25 @@ export default function Disclosures() {
         { name: "Complaints Handling Disclosure" },
         { name: 'Privacy Policy' },
         { name: "Terms and Conditions" },
+        { name: "Modern Slavery Act Transparency Statement" }
     ]
 
     const returnContent = () => {
         switch (content) {
+            case "Modern Slavery Act Transparency Statement":
+                return (
+                    <div className="text-white md:pt-24 pt-0">
+                        <p className="text-sm font-bold uppercase mb-10">Modern Slavery Act Transparency Statement</p>
+                        <p className="text-sm">
+                            Boldhaven Management LLP (&quot;Boldhaven&quot; or &quot;the Firm&quot;) acknowledges the importance of compliance with the Modern Slavery Act 2015 (the “MSA”). Modern slavery as referred to in the MSA includes slavery, servitude and forced or compulsory labour, and human trafficking, and human trafficking. The Firm is committed to conducting its business without modern slavery in either its business or its supply chains and to being transparent in its approach, as is consistent with the Firm&quot;s obligations under the MSA.
+                            <br /><br />
+                            After having reviewed the requirements of the MSA with regard to its business and supply chain, the Firm considers that its business and supply chain are at a low risk of involving instances of modern slavery. The Firm is aware of the importance of its compliance with the MSA and the need to take into account the risk of modern slavery in the Firm&quot;s business.
+                            <br /><br />
+                            This statement is made pursuant to Section 54(1) of the Modern Slavery Act 2015 in respect of the Financial year end 31 December 2023, and is approved by the Governing Body of the Firm. The Firm will periodically review and, as appropriate, update this statement.
+                            <br /><br />
+                        </p>
+                    </div>
+                );
             case "UK Stewardship Code":
                 return (
                     <div className="text-white md:pt-24 pt-0">
@@ -402,7 +417,7 @@ export default function Disclosures() {
                         <a href="/"><img src="./boldhaven-logo.svg" className="w-42 mb-10 " /></a>
                         <p onClick={() => router.push('/')} className="text-white uppercase font-sans text-primary text-xs font-semibold mb-8 cursor-pointer">{`< BACK`}</p>
                         {links.map((item: any, key: number) => {
-                            return <div key={key} className="flex flex-row items-center gap-1 ">{item.icon && <Image className="mb-8" width={15} height={15} src={"/icon-pdf.svg"} alt={"pdf-icon"} />}<li key={key} onClick={() => { setContent(item.name) }} className="uppercase font-sans text-primary text-xs font-semibold mb-8 cursor-pointer" style={item.name === content ? { color: '#417CFF' } : { color: '#fff' }}>{item.name}</li></div>
+                            return <div key={key} className="flex flex-row items-center gap-1 w-[90%]">{item.icon && <Image className="mb-8" width={15} height={15} src={"/icon-pdf.svg"} alt={"pdf-icon"} />}<li key={key} onClick={() => { setContent(item.name) }} className="uppercase font-sans text-primary text-xs font-semibold mb-8 cursor-pointer" style={item.name === content ? { color: '#417CFF' } : { color: '#fff' }}>{item.name}</li></div>
                         })}
                     </ul>
                 </div>
