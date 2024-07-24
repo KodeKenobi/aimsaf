@@ -20,7 +20,7 @@ const LandingPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeInOut", duration: 0.7, delay: 0.6 }}
             >
-                Boldhaven is a European Investment Manager based in London
+                Boldhaven is an Alternative Investment Manager based in London
             </motion.h1>
             <div className="absolute z-100 sm:bottom-10 bottom-10 md:bottom-[5vw] lg:bottom-[5vw] xl:bottom-[8vw] 2xl:bottom-[10vw] z-10 right-[calc(37%)]">
                 <motion.svg
