@@ -14,11 +14,11 @@ export default function Disclosures() {
     let i = 1;
 
     const links = [
+        { name: 'Privacy Policy' },
         { name: "MIFIDPRU 8 Disclosure" },
         { name: 'UK Stewardship Code' },
         { name: "Shareholder Rights Directive" },
         { name: "Complaints Handling Disclosure" },
-        { name: 'Privacy Policy' },
         { name: "Terms and Conditions" },
         { name: "Modern Slavery Act Transparency Statement" }
     ]
@@ -410,7 +410,7 @@ export default function Disclosures() {
 
 
     return <section className="h-full bg-primary">
-        <div className=" h-full w-full lg:p-24 p-10 lg:pb-4 font-sans">
+        <div className=" h-full w-full lg:p-24 p-10 lg:pb-4 font-sans" >
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 h-full">
                 <div className="menu lg:col-span-1 col-span-4 lg:fixed block">
                     <ul>
