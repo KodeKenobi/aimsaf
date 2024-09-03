@@ -41,8 +41,8 @@ const MobileNav = () => {
             <ul
                 className={
                     isOpen
-                        ? 'absolute lg:hidden left-0 top-0 w-[100%] h-screen ease-in-out text-right duration-1000 bg-primary z-[100]'
-                        : 'ease-in-out duration-1000 w-[100%] h-screen fixed top-0 text-right bottom-0 left-[-100%] bg-primary z-[100]'
+                        ? 'absolute lg:hidden left-0 top-0 w-[100%] h-screen ease-in-out text-right duration-1000 bg-primary z-[100] pl-0'
+                        : 'ease-in-out duration-1000 w-[100%] h-screen fixed top-0 text-right bottom-0 left-[-100%] bg-primary z-[100] pl-0'
                 }
             >
                 {/* Mobile Logo */}

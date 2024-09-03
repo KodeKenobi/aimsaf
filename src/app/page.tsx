@@ -157,7 +157,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="h-screen bg-hero bg-cover overflow-hidden snap-y snap-mandatory">
+    <div ref={containerRef} className="h-screen bg-hero bg-cover overflow-hidden md:snap-y md:snap-mandatory">
       <div ref={navbarRef} className="navbar flex justify-between items-center md:px-20 px-8 h-16 lg:h-28 absolute w-full bg-secondary z-20 top-0 left-0 show-navbar lg:overflow-hidden">
         <Navigation />
       </div>

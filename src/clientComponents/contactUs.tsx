@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
+import React from "react";
 
 const Contact = () => {
-
+    const [success, setSuccess] = React.useState(false);
     const data = [
         {
             icon: '/icons/icon-contact-phone.svg',
@@ -41,7 +42,7 @@ const Contact = () => {
     const handleSubmit = async (values: any, { setSubmitting, resetForm }: any) => {
         try {
             await axios.post('/api/contact', values);
-            alert('Message sent successfully');
+            setSuccess(true);
             resetForm();
         } catch (error) {
             console.error('Error sending email:', error);
@@ -182,6 +183,7 @@ const Contact = () => {
                                         Submit
                                     </button>
                                 </motion.div>
+                                {success && <p className="text-accent lg:text-sm 2xl:text-base text-[10px] 4xl:text-2xl w-[90%] lg:w-full">Thank you for your message, we will get back to you shortly</p>}
                             </Form>
                         )}
                     </Formik>
