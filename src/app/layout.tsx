@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Boldhaven",
+  title: "Boldhaven Management",
   description: "Boldhaven Investments",
 };
 
