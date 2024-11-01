@@ -13,7 +13,7 @@ const Philosophy = () => {
         },
         {
             heading: 'Contrarian mindset',
-            content: 'We favour investments where our views around the long-term trajectory, sustainability and qualityof cash-based earnings, informed by deep proprietary research, are significantly different to consensus expectations.',
+            content: 'We favour investments where our views around the long-term trajectory, sustainability and quality of cash-based earnings, informed by deep proprietary research, are significantly different to consensus expectations.',
             icon: '/icons/icon-02.svg',
             timing: 1.2
         },
