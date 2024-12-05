@@ -34,7 +34,7 @@ const Section = ({ id, children, index, setActiveSection }: any) => {
       ref={ref}
       id={id}
       key={index}
-      className="md:h-screen h-[100dvh] flex items-center justify-center md:snap-start"
+      className="md:h-screen h-[100vh] flex items-center justify-center md:snap-start"
       initial="hidden"
       animate="visible"
       variants={variants}

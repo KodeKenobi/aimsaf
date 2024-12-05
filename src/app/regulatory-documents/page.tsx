@@ -424,15 +424,6 @@ export default function Disclosures() {
                 <div className="col-span-4 lg:col-start-2  lg:pl-10 min-h-[100vh]">
                     {returnContent()}
                 </div>
-                {/* <div className="z-20 relative col-span-4">
-                    <motion.p
-                        initial={{ y: 10, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ ease: "easeOut", duration: 1, delay: 3.1 }}
-                        className="text-center text-[#8E8E8E] mt-4 lg:text-xs text-[8px] font-light p-2">
-                        © Copyright 2024 Origin Funding Partners
-                    </motion.p>
-                </div> */}
             </div>
         </div>
     </section >

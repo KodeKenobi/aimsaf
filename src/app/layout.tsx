@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} overscroll-none`}>
+      <body className={`${montserrat.variable} overscroll-none h-screen`}>
         {children}
       </body>
     </html>

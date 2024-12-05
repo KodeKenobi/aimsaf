@@ -13,7 +13,7 @@ export default function Navigation() {
                 <Link className="py-6 tracking-widest" href={'#about'}>ABOUT</Link>
                 <Link className="py-6 tracking-widest" href={'#philosophy'}>PHILOSOPHY</Link>
                 <Link className="py-6 tracking-widest" href={'#contact'}>CONTACT</Link>
-                <Link className="py-6 tracking-widest" href={'https://boldhaven-portal.basispointdev.com/'}>PORTAL</Link>
+                <Link className="py-6 tracking-widest" target="_blank" href={'https://boldhaven-portal.basispointdev.com/'}>PORTAL</Link>
                 <div className="absolute bottom-0 left-0 w-[120%] h-[2px] bg-white bg-opacity-[16%]" />
             </div>
             <MobileNav />
