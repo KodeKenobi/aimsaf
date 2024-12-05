@@ -75,7 +75,7 @@ const MobileNav = () => {
                         CONTACT
                     </li>
                 </a>
-                <a href="https://boldhaven-portal.basispointdev.com/" onClick={() => setIsOpen(false)}>
+                <a href="https://boldhaven.investor-portal.online/" onClick={() => setIsOpen(false)}>
                     <li
                         className=' uppercase tracking-wide font-sans p-3 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
                     >

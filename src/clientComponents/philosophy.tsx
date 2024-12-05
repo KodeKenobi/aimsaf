@@ -13,7 +13,7 @@ const Philosophy = () => {
         },
         {
             heading: 'Contrarian mindset',
-            content: 'We favour investments where our views around the long-term trajectory, sustainability and qualityof cash-based earnings, informed by deep proprietary research, are significantly different to consensus expectations.',
+            content: 'We favour investments where our views around the long-term trajectory, sustainability and quality of cash-based earnings, informed by deep proprietary research, are significantly different to consensus expectations.',
             icon: '/icons/icon-02.svg',
             timing: 1.2
         },
@@ -25,7 +25,7 @@ const Philosophy = () => {
         },
         {
             heading: 'Dedicated short process',
-            content: 'Our short book does not exist to fund our long book.It is designed to be a standalone portfolio of ideas where we believe the quality, sustainability and trajectory of a business’s cash-based earnings are misrepresented tothe market.',
+            content: `Our short book does not exist to fund our long book. It is designed to be a standalone portfolio of ideas where we believe significant misunderstanding exists around the quality, sustainability and trajectory of a company's operating metrics.`,
             icon: '/icons/icon-04.svg',
             timing: 2.4
         },
