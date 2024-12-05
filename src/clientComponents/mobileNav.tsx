@@ -42,43 +42,47 @@ const MobileNav = () => {
                 className={
                     isOpen
                         ? 'absolute lg:hidden left-0 top-0 w-[100%] h-screen ease-in-out text-right duration-1000 bg-primary z-[100] pl-0'
-                        : 'ease-in-out duration-1000 w-[100%] h-screen fixed top-0 text-right bottom-0 left-[-100%] bg-primary z-[100] pl-0'
+                        : 'ease-in-out duration-1000 w-[100%] h-screen absolute top-0 text-right bottom-0 left-[-100%] bg-primary z-[100] pl-0'
                 }
             >
-                {/* Mobile Logo */}
-                {/* <img src="/logo.png" width={120} className="ml-4 mt-10 mb-10" /> */}
                 <div className="h-[120px]" />
 
-                {/* Mobile Navigation Items */}
                 <a href="#home" onClick={() => setIsOpen(false)}>
                     <li
-                        className=' uppercase tracking-wide font-sans p-7 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
+                        className=' uppercase tracking-wide font-sans p-3 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
                     >
                         HOME
                     </li>
                 </a>
                 <a href="#about" onClick={() => setIsOpen(false)}>
                     <li
-                        className=' uppercase tracking-wide font-sans p-7 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
+                        className=' uppercase tracking-wide font-sans p-3 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
                     >
                         ABOUT
                     </li>
                 </a>
                 <a href="#philosophy" onClick={() => setIsOpen(false)}>
                     <li
-                        className=' uppercase tracking-wide font-sans p-7 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
+                        className=' uppercase tracking-wide font-sans p-3 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
                     >
                         PHILOSOPHY
                     </li>
                 </a>
                 <a href="#contact" onClick={() => setIsOpen(false)}>
                     <li
-                        className=' uppercase tracking-wide font-sans p-7 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
+                        className=' uppercase tracking-wide font-sans p-3 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
                     >
                         CONTACT
                     </li>
                 </a>
-                <p className="md:hidden block font-light font-sans md:text-xs text-[10px] text-gray md:w-[75%] w-full text-center mx-auto pb-4 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl md:mt-8 mt-[50%] w-[80%]">
+                <a href="https://boldhaven.investor-portal.online/" onClick={() => setIsOpen(false)}>
+                    <li
+                        className=' uppercase tracking-wide font-sans p-3 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
+                    >
+                        PORTAL
+                    </li>
+                </a>
+                <p className="md:hidden block font-light font-sans md:text-xs text-[10px] text-gray md:w-[75%]  text-center mx-auto pb-4 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl md:mt-8 mt-24 w-[80%]">
                     Copyright © 2024 Boldhaven Management LLP | All rights reserved
                     Boldhaven Management LLP is regulated by the United Kingdom Financial Conduct Authority (FCA) and the US Securities and Exchange Commission (SEC)
 
