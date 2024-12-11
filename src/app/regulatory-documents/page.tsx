@@ -60,11 +60,9 @@ export default function Disclosures() {
                             <br /><br />
                             Boldhaven is classified under MIFIDPRU as a small and non-interconnected investment firm (“SNI MIFIDPRU investment firm”). As such, MIFIDPRU 8 requires Boldhaven to disclose information regarding the Firm&apos;s remuneration policy and practices.
                             <br /><br />
-                            The Information is confidential and is not intended to influence you in making any investment decisions and should not be considered as advice or a recommendation to invest.
+                            The purpose of these disclosures is to give stakeholders and market participants an insight into the Firm’s culture, and to assist stakeholders in making more informed decisions about their relationship with the Firm.
                             <br /><br />
-                            The purpose of these disclosures is to give stakeholders and market participants an insight into the Firm&apos;s culture, and to assist stakeholders in making more informed decisions about their relationship with the Firm.
-                            <br /><br />
-                            This document has been prepared by Boldhaven in accordance with the requirements of MIFPRU 8 and is verified by the Governing Body. Unless otherwise stated, all figures are as at the 31st March 2023 financial year-end.
+                            This document has been prepared by Boldhaven in accordance with the requirements of MIFPRU 8 and is verified by the Governing Body. Unless otherwise stated, all figures are as at the 31 st March 2024 financial year-end.
                             <br /><br />
                         </p>
 
@@ -120,7 +118,7 @@ export default function Disclosures() {
                                 </tr>
                                 <tr>
                                     <td rowSpan={7} width="94">Individual</td>
-                                    <td rowSpan={5} width="255">&nbsp;<p></p>
+                                    <td rowSpan={7} width="255">&nbsp;<p></p>
                                         <p>&nbsp;</p>
                                         <p>Individual performance relative to role requirement (including financial objectives)</p></td>
                                     <td width="274">Individual performance (including non-financial objectives)</td>
@@ -138,22 +136,22 @@ export default function Disclosures() {
                                     <td width="274">Ongoing compliance</td>
                                 </tr>
                                 <tr>
-                                    <td width="255">&nbsp;</td>
+                                    {/* <td width="255">&nbsp;</td> */}
                                     <td width="274">Business development</td>
                                 </tr>
                                 <tr>
-                                    <td width="255">&nbsp;</td>
+                                    {/* <td width="255">&nbsp;</td> */}
                                     <td width="274">Contribution to the Firm</td>
                                 </tr>
                             </tbody>
                         </table>
                         <br />< br />
                         <p className="text-sm mt-10">
-                            The fixed and variable components of remuneration are appropriately balanced: the fixed component represents a sufficiently high proportion of the total remuneration to enable the operation of a fully flexible policy on variable remuneration. This allows for the possibility of paying no variable remuneration component, which the Firm would do in certain situations, such as where the Firm&apos;s profitability performance is constrained, or where there is a risk that the Firm may not be able to meet its capital or liquidity regulatory requirements.
+                        The fixed and variable components of remuneration are appropriately balanced: the fixed component represents a sufficiently high proportion of the total remuneration to enable the operation of a fully flexible policy on variable remuneration. This allows for the possibility of paying no variable remuneration component, which the Firm would do in certain situations, such as where the Firm&apos;s profitability performance is constrained, or where there is a risk that the Firm may not be able to meet its capital or liquidity regulatory requirements.
                         </p>
                         <p className="text-sm font-bold uppercase mb-10 mt-10">Governance and Oversight</p>
                         <p className="text-sm">
-                            The Governing Body is responsible for setting and overseeing the implementation of Boldhaven&apos;s remuneration policy and practices. In order to fulfil its responsibilities, the Governing Body:
+                        The Governing Body is responsible for setting and overseeing the implementation of Boldhaven&apos;s remuneration policy and practices. In order to fulfil its responsibilities, the Governing Body:
                             <br />
                             <br />
                             <ul className="list-disc">
@@ -168,8 +166,8 @@ export default function Disclosures() {
                         <p className="text-sm mb-10 mt-10 font-bold uppercase">
                             Quantitative Remuneration Disclosures
                         </p>
-                        <p className="text-sm">
-                            For the financial year 1st April 2022 to 31st March 2023, the total amount of remuneration awarded to all staff was £424K, of which £361K comprised the fixed component of remuneration, and £63K comprised the variable component. For these purposes, &apos;staff&apos; is defined broadly, and includes, for example, employees of the Firm itself, partners, employees of other entities in the group, employees of joint service companies, and secondees.
+                        <p className="text-sm mb-10">
+                            For the financial year 1st April 2023 to 31st March 2024, the total amount of remuneration awarded to all staff was £763K, of which £480K comprised the fixed component of remuneration, and £283K comprised the variable component. For these purposes, &apos;staff&apos; is defined broadly, and includes, for example, employees of the Firm itself, partners, employees of other entities in the group, employees of joint service companies, and secondees.
                         </p>
                     </div>
                 );
