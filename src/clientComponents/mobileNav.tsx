@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 const MobileNav = () => {
     const [isOpen, setIsOpen] = useState(false);
     const genericHamburgerLine = `h-[1px] w-7 my-1 rounded-full bg-white transition ease transform duration-300 z-10`;
+    const currentYear = new Date().getFullYear();
 
     useEffect(() => {
         if (isOpen) {
@@ -83,7 +84,7 @@ const MobileNav = () => {
                     </li>
                 </a>
                 <p className="md:hidden block font-light font-sans md:text-xs text-[10px] text-gray md:w-[75%]  text-center mx-auto pb-4 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl md:mt-8 mt-24 w-[80%]">
-                    Copyright © 2024 Boldhaven Management LLP | All rights reserved
+                    Copyright © {currentYear} Boldhaven Management LLP | All rights reserved
                     Boldhaven Management LLP is regulated by the United Kingdom Financial Conduct Authority (FCA) and the US Securities and Exchange Commission (SEC)
 
                 </p>
