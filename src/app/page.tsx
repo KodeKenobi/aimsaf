@@ -52,7 +52,15 @@ const Section = ({ id, children, index, setActiveSection }: any) => {
 const Home = () => {
   const [activeSection, setActiveSection] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
+  const isScrollingRef = useRef(false);
+  const touchStartYRef = useRef(0);
+  const touchEndYRef = useRef(0);
+  const touchStartedInContainer = useRef(false);
+  const touchStartTimeRef = useRef<number | null>(null);
   const navbarRef = useRef<HTMLDivElement>(null);
+
+  const SCROLL_THRESHOLD = 50;
+  const MAX_TAP_DURATION = 100;
 
   const scrollToSection = (index: number) => {
     const container = containerRef.current;
@@ -83,30 +91,77 @@ const Home = () => {
 
 
   useEffect(() => {
-    const container = containerRef.current;
-
-    if (!container) return;
-
-    let isScrolling = false;
-
     const handleWheel = (event: WheelEvent) => {
-      if (isScrolling) return;
+      console.log('hit')
+      if (isScrollingRef.current) return;
 
-      isScrolling = true;
+      isScrollingRef.current = true;
+
+      const container = containerRef.current;
+      if (!container) return;
 
       if (event.deltaY > 0) {
-        scrollToSection(Math.min(activeSection + 1, sections.length - 1));
+        container.scrollBy({ top: window.innerHeight, left: 0, behavior: 'smooth' });
       } else {
-        scrollToSection(Math.max(activeSection - 1, 0));
+        container.scrollBy({ top: -window.innerHeight, left: 0, behavior: 'smooth' });
       }
 
-      setTimeout(() => (isScrolling = false), 800);
+      setTimeout(() => {
+        isScrollingRef.current = false;
+      }, 1250);
     };
 
-    container.addEventListener('wheel', handleWheel);
+    const handleTouchStart = (event: TouchEvent) => {
+      const container = containerRef.current;
+      touchStartedInContainer.current = container ? container.contains(event.target as Node) : false;
+      if (touchStartedInContainer.current) {
+        touchStartYRef.current = event.touches[0].clientY;
+        touchStartTimeRef.current = Date.now();
+      }
+    };
+
+    const handleTouchMove = (event: TouchEvent) => {
+      if (touchStartedInContainer.current) {
+        touchEndYRef.current = event.touches[0].clientY;
+      }
+    };
+
+    const handleTouchEnd = () => {
+      if (isScrollingRef.current || !touchStartedInContainer.current) return;
+
+      const touchDistance = touchStartYRef.current - touchEndYRef.current;
+      const touchDuration = Date.now() - (touchStartTimeRef.current ?? 0);
+
+      if (Math.abs(touchDistance) < SCROLL_THRESHOLD || touchDuration < MAX_TAP_DURATION) {
+        return;
+      }
+
+      isScrollingRef.current = true;
+
+      const container = containerRef.current;
+      if (!container) return;
+
+      if (touchDistance > 0) {
+        container.scrollBy({ top: window.innerHeight, left: 0, behavior: 'smooth' });
+      } else {
+        container.scrollBy({ top: -window.innerHeight, left: 0, behavior: 'smooth' });
+      }
+
+      setTimeout(() => {
+        isScrollingRef.current = false;
+      }, 1250);
+    };
+
+    window.addEventListener('wheel', handleWheel);
+    window.addEventListener('touchstart', handleTouchStart);
+    window.addEventListener('touchmove', handleTouchMove);
+    window.addEventListener('touchend', handleTouchEnd);
 
     return () => {
-      container.removeEventListener('wheel', handleWheel);
+      window.removeEventListener('wheel', handleWheel);
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchend', handleTouchEnd);
     };
   }, [activeSection]);
 
