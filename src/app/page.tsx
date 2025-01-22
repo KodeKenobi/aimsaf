@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -10,12 +10,17 @@ import Contact from '@/clientComponents/contactUs';
 import Navigation from '@/clientComponents/navigation';
 import PaginationDots from '@/clientComponents/paginationDots';
 
-const sections = [<LandingPage key={1} />, <About key={2} />, <Philosophy key={3} />, <Contact key={4} />];
+const sections = [
+  <LandingPage key={1} />,
+  <About key={2} />,
+  <Philosophy key={3} />,
+  <Contact key={4} />,
+];
 
 const Section = ({ id, children, index, setActiveSection }: any) => {
   const [ref, inView] = useInView({
     triggerOnce: false,
-    threshold: 0.5,
+    threshold: 0.5, 
   });
 
   useEffect(() => {
@@ -34,7 +39,7 @@ const Section = ({ id, children, index, setActiveSection }: any) => {
       ref={ref}
       id={id}
       key={index}
-      className="md:h-screen h-[100vh] flex items-center justify-center md:snap-start"
+      className="w-full h-screen flex items-center justify-center snap-start" 
       initial="hidden"
       animate="visible"
       variants={variants}
@@ -47,25 +52,20 @@ const Section = ({ id, children, index, setActiveSection }: any) => {
 const Home = () => {
   const [activeSection, setActiveSection] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
-  const isScrollingRef = useRef(false);
-  const touchStartYRef = useRef(0);
-  const touchEndYRef = useRef(0);
-  const touchStartedInContainer = useRef(false);
-  const touchStartTimeRef = useRef<number | null>(null);
   const navbarRef = useRef<HTMLDivElement>(null);
-
-  const SCROLL_THRESHOLD = 50;
-  const MAX_TAP_DURATION = 100;
 
   const scrollToSection = (index: number) => {
     const container = containerRef.current;
     if (container) {
-      container.scrollTo({ top: index * window.innerHeight, left: 0, behavior: 'smooth' });
+      container.scrollTo({
+        top: index * window.innerHeight,
+        left: 0,
+        behavior: 'smooth',
+      });
     }
   };
 
   useEffect(() => {
-
     const handleMouseOver = (event: MouseEvent) => {
       if (event.clientY < 150) {
         navbarRef.current?.classList.add('show-navbar');
@@ -73,6 +73,7 @@ const Home = () => {
         navbarRef.current?.classList.remove('show-navbar');
       }
     };
+
     window.addEventListener('mousemove', handleMouseOver);
 
     return () => {
@@ -82,93 +83,60 @@ const Home = () => {
 
 
   useEffect(() => {
+    const container = containerRef.current;
+
+    if (!container) return;
+
+    let isScrolling = false;
+
     const handleWheel = (event: WheelEvent) => {
-      console.log('hit')
-      if (isScrollingRef.current) return;
+      if (isScrolling) return;
 
-      isScrollingRef.current = true;
-
-      const container = containerRef.current;
-      if (!container) return;
+      isScrolling = true;
 
       if (event.deltaY > 0) {
-        container.scrollBy({ top: window.innerHeight, left: 0, behavior: 'smooth' });
+        scrollToSection(Math.min(activeSection + 1, sections.length - 1));
       } else {
-        container.scrollBy({ top: -window.innerHeight, left: 0, behavior: 'smooth' });
+        scrollToSection(Math.max(activeSection - 1, 0));
       }
 
-      setTimeout(() => {
-        isScrollingRef.current = false;
-      }, 1250);
+      setTimeout(() => (isScrolling = false), 800);
     };
 
-    const handleTouchStart = (event: TouchEvent) => {
-      const container = containerRef.current;
-      touchStartedInContainer.current = container ? container.contains(event.target as Node) : false;
-      if (touchStartedInContainer.current) {
-        touchStartYRef.current = event.touches[0].clientY;
-        touchStartTimeRef.current = Date.now();
-      }
-    };
-
-    const handleTouchMove = (event: TouchEvent) => {
-      if (touchStartedInContainer.current) {
-        touchEndYRef.current = event.touches[0].clientY;
-      }
-    };
-
-    const handleTouchEnd = () => {
-      if (isScrollingRef.current || !touchStartedInContainer.current) return;
-
-      const touchDistance = touchStartYRef.current - touchEndYRef.current;
-      const touchDuration = Date.now() - (touchStartTimeRef.current ?? 0);
-
-      if (Math.abs(touchDistance) < SCROLL_THRESHOLD || touchDuration < MAX_TAP_DURATION) {
-        return;
-      }
-
-      isScrollingRef.current = true;
-
-      const container = containerRef.current;
-      if (!container) return;
-
-      if (touchDistance > 0) {
-        container.scrollBy({ top: window.innerHeight, left: 0, behavior: 'smooth' });
-      } else {
-        container.scrollBy({ top: -window.innerHeight, left: 0, behavior: 'smooth' });
-      }
-
-      setTimeout(() => {
-        isScrollingRef.current = false;
-      }, 1250);
-    };
-
-    window.addEventListener('wheel', handleWheel);
-    window.addEventListener('touchstart', handleTouchStart);
-    window.addEventListener('touchmove', handleTouchMove);
-    window.addEventListener('touchend', handleTouchEnd);
+    container.addEventListener('wheel', handleWheel);
 
     return () => {
-      window.removeEventListener('wheel', handleWheel);
-      window.removeEventListener('touchstart', handleTouchStart);
-      window.removeEventListener('touchmove', handleTouchMove);
-      window.removeEventListener('touchend', handleTouchEnd);
+      container.removeEventListener('wheel', handleWheel);
     };
-  }, []);
+  }, [activeSection]);
+
 
   return (
-    <div ref={containerRef} className="h-screen bg-hero bg-cover overflow-hidden md:snap-y md:snap-mandatory">
-      <div ref={navbarRef} className="navbar flex justify-between items-center md:px-20 px-8 h-16 lg:h-28 absolute w-full bg-secondary z-20 top-0 left-0 show-navbar lg:overflow-hidden">
+    <div
+      ref={containerRef}
+      className="h-screen bg-hero bg-cover snap-y snap-mandatory overflow-y-scroll"
+    >
+      <div ref={navbarRef} className="navbar fixed top-0 left-0 w-full z-10 bg-secondary">
         <Navigation />
       </div>
       {sections.map((section, index) => (
-        <Section key={index} id={`section-${index}`} index={index} setActiveSection={setActiveSection}>
+        <Section
+          key={index}
+          id={`section-${index}`}
+          index={index}
+          setActiveSection={setActiveSection}
+        >
           {section}
         </Section>
       ))}
-      <PaginationDots total={sections.length} activeIndex={activeSection} onDotClick={scrollToSection} />
+      <PaginationDots
+        total={sections.length}
+        activeIndex={activeSection}
+        onDotClick={scrollToSection}
+      />
     </div>
   );
 };
 
 export default Home;
+
