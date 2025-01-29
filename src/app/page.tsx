@@ -14,13 +14,13 @@ const sections = [
   <LandingPage key={1} />,
   <About key={2} />,
   <Philosophy key={3} />,
-  <Contact key={4} />,
+  <Contact key={4} />
 ];
 
 const Section = ({ id, children, index, setActiveSection }: any) => {
   const [ref, inView] = useInView({
     triggerOnce: false,
-    threshold: 0.5, 
+    threshold: 0.5,
   });
 
   useEffect(() => {
@@ -29,20 +29,12 @@ const Section = ({ id, children, index, setActiveSection }: any) => {
     }
   }, [inView, index, setActiveSection]);
 
-  const variants = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-    hidden: { opacity: 1, scale: 1 },
-  };
-
   return (
     <motion.div
       ref={ref}
       id={id}
       key={index}
-      className="w-full h-screen flex items-center justify-center snap-start" 
-      initial="hidden"
-      animate="visible"
-      variants={variants}
+      className="w-full h-screen flex items-center justify-center"
     >
       {children}
     </motion.div>
@@ -51,127 +43,40 @@ const Section = ({ id, children, index, setActiveSection }: any) => {
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState(0);
+  const [showBackToTop, setShowBackToTop] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const isScrollingRef = useRef(false);
-  const touchStartYRef = useRef(0);
-  const touchEndYRef = useRef(0);
-  const touchStartedInContainer = useRef(false);
-  const touchStartTimeRef = useRef<number | null>(null);
-  const navbarRef = useRef<HTMLDivElement>(null);
-
-  const SCROLL_THRESHOLD = 50;
-  const MAX_TAP_DURATION = 100;
-
-  const scrollToSection = (index: number) => {
-    const container = containerRef.current;
-    if (container) {
-      container.scrollTo({
-        top: index * window.innerHeight,
-        left: 0,
-        behavior: 'smooth',
-      });
-    }
-  };
 
   useEffect(() => {
-    const handleMouseOver = (event: MouseEvent) => {
-      if (event.clientY < 150) {
-        navbarRef.current?.classList.add('show-navbar');
-      } else {
-        navbarRef.current?.classList.remove('show-navbar');
+    const handleScroll = () => {
+      if (containerRef.current) {
+        setShowBackToTop(containerRef.current.scrollTop > 100);
       }
     };
 
-    window.addEventListener('mousemove', handleMouseOver);
+    const container = containerRef.current;
+    if (container) {
+      container.addEventListener('scroll', handleScroll);
+    }
 
     return () => {
-      window.removeEventListener('mousemove', handleMouseOver);
+      if (container) {
+        container.removeEventListener('scroll', handleScroll);
+      }
     };
   }, []);
 
-
-  useEffect(() => {
-    const handleWheel = (event: WheelEvent) => {
-      console.log('hit')
-      if (isScrollingRef.current) return;
-
-      isScrollingRef.current = true;
-
-      const container = containerRef.current;
-      if (!container) return;
-
-      if (event.deltaY > 0) {
-        container.scrollBy({ top: window.innerHeight, left: 0, behavior: 'smooth' });
-      } else {
-        container.scrollBy({ top: -window.innerHeight, left: 0, behavior: 'smooth' });
-      }
-
-      setTimeout(() => {
-        isScrollingRef.current = false;
-      }, 1250);
-    };
-
-    const handleTouchStart = (event: TouchEvent) => {
-      const container = containerRef.current;
-      touchStartedInContainer.current = container ? container.contains(event.target as Node) : false;
-      if (touchStartedInContainer.current) {
-        touchStartYRef.current = event.touches[0].clientY;
-        touchStartTimeRef.current = Date.now();
-      }
-    };
-
-    const handleTouchMove = (event: TouchEvent) => {
-      if (touchStartedInContainer.current) {
-        touchEndYRef.current = event.touches[0].clientY;
-      }
-    };
-
-    const handleTouchEnd = () => {
-      if (isScrollingRef.current || !touchStartedInContainer.current) return;
-
-      const touchDistance = touchStartYRef.current - touchEndYRef.current;
-      const touchDuration = Date.now() - (touchStartTimeRef.current ?? 0);
-
-      if (Math.abs(touchDistance) < SCROLL_THRESHOLD || touchDuration < MAX_TAP_DURATION) {
-        return;
-      }
-
-      isScrollingRef.current = true;
-
-      const container = containerRef.current;
-      if (!container) return;
-
-      if (touchDistance > 0) {
-        container.scrollBy({ top: window.innerHeight, left: 0, behavior: 'smooth' });
-      } else {
-        container.scrollBy({ top: -window.innerHeight, left: 0, behavior: 'smooth' });
-      }
-
-      setTimeout(() => {
-        isScrollingRef.current = false;
-      }, 1250);
-    };
-
-    window.addEventListener('wheel', handleWheel);
-    window.addEventListener('touchstart', handleTouchStart);
-    window.addEventListener('touchmove', handleTouchMove);
-    window.addEventListener('touchend', handleTouchEnd);
-
-    return () => {
-      window.removeEventListener('wheel', handleWheel);
-      window.removeEventListener('touchstart', handleTouchStart);
-      window.removeEventListener('touchmove', handleTouchMove);
-      window.removeEventListener('touchend', handleTouchEnd);
-    };
-  }, [activeSection]);
-
+  const scrollToTop = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   return (
     <div
       ref={containerRef}
-      className="h-screen bg-hero bg-cover snap-y snap-mandatory overflow-y-scroll"
+      className="h-screen bg-hero bg-cover snap-y snap-mandatory overflow-y-auto"
     >
-      <div ref={navbarRef} className="navbar fixed top-0 left-0 w-full z-10 bg-secondary">
+      <div className="navbar fixed top-0 left-0 w-full z-10 bg-secondary">
         <Navigation />
       </div>
       {sections.map((section, index) => (
@@ -187,11 +92,31 @@ const Home = () => {
       <PaginationDots
         total={sections.length}
         activeIndex={activeSection}
-        onDotClick={scrollToSection}
+        onDotClick={(index) => {
+          if (containerRef.current) {
+            containerRef.current.scrollTo({
+              top: index * window.innerHeight,
+              behavior: 'smooth',
+            });
+          }
+        }}
       />
+      <motion.button
+        className="fixed bottom-5 right-5 p-3 bg-gray-700 text-white rounded-full shadow-lg hover:bg-gray-900 transition flex justify-center items-center"
+        onClick={scrollToTop}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: showBackToTop ? 1 : 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.svg
+          xmlns="http://www.w3.org/2000/svg" className="rotate-180" width="28" height="28" viewBox="0 0 28 28" fill="none"
+        >
+          <path fillRule="evenodd" clipRule="evenodd" d="M1.75 14C1.75 7.2345 7.2345 1.75 14 1.75C20.7655 1.75 26.25 7.2345 26.25 14C26.25 20.7655 20.7655 26.25 14 26.25C7.2345 26.25 1.75 20.7655 1.75 14ZM0 14C0 6.26797 6.26797 0 14 0C21.732 0 28 6.26797 28 14C28 21.732 21.732 28 14 28C6.26797 28 0 21.732 0 14ZM14.6186 20.5562L13.9998 21.175L13.3812 20.5562L8.1312 15.3062L9.36863 14.0688L13.1248 17.8252V6.81258H14.8748V17.8252L18.6312 14.0688L19.8686 15.3062L14.6186 20.5562Z" fill="#417CFF" />
+        </motion.svg>
+        <p className='text-white md:text-sm text-xs 2xl:text-xl ml-2 4xl:text-2xl font-sans'>Back To Top</p>
+      </motion.button>
     </div>
   );
 };
 
 export default Home;
-
