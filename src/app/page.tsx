@@ -76,7 +76,7 @@ const Home = () => {
       ref={containerRef}
       className="h-screen bg-hero bg-cover snap-y snap-mandatory overflow-y-auto"
     >
-      <div className="navbar fixed top-0 left-0 w-full z-10 bg-secondary">
+      <div className="fixed top-0 left-0 w-full z-[100] bg-secondary">
         <Navigation />
       </div>
       {sections.map((section, index) => (
