@@ -12,23 +12,23 @@ const Contact = () => {
     const data = [
         {
             icon: '/icons/icon-contact-phone.svg',
-            href: 'tel:+44 20 8017 4521',
+            href: '#',
             label: 'Phone',
-            link: '+44 20 8017 4521',
+            link: '+27 (0) XX XXX XXXX',
             timing: 0.6
         },
         {
             icon: '/icons/icon-contact-email.svg',
-            href: 'mailto:info@boldhaven.com',
+            href: 'mailto:info@aimsaf.holdings',
             label: 'Email',
-            link: 'info@boldhaven.com',
+            link: 'info@aimsaf.holdings',
             timing: 0.8
         },
         {
             icon: '/icons/icon-contact-address.svg',
-            href: 'tel:+44 20 8017 4521',
+            href: '#',
             label: 'Address',
-            link: '100 Wigmore Street, London W1U 3RN',
+            link: 'With offices in KZN and Gauteng',
             timing: 1
         },
     ];
@@ -197,13 +197,11 @@ const Contact = () => {
                 transition={{ ease: "easeIn", duration: 0.4, delay: 2.5 }}
             >
                 <div className="text-center lg:text-left">
-                    <a href="/regulatory-documents" className="font-bold font-sans text-xs text-white w-[75%] text-center mx-auto md:mb-8 mb-8 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl ">Regulatory Documents</a>
                     <p className="md:block hidden font-light font-sans md:text-xs text-[10px] text-gray md:w-[75%] w-full text-center mx-auto pb-4 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl md:mt-8 mt-8">
-                        Copyright © {currentYear} Boldhaven Management LLP | All rights reserved
-                        Boldhaven Management LLP is regulated by the United Kingdom Financial Conduct Authority (FCA) and the US Securities and Exchange Commission (SEC)
+                        Copyright © {currentYear} AIMSAF HOLDINGS | All rights reserved
                     </p>
                 </div>
-                <img src={"/boldhaven-logo.svg"} className="md:w-auto w-32 mt-8 md:mt-0" alt="logo" />
+                <div className="md:w-auto w-32 mt-8 md:mt-0 text-white font-serif text-xl tracking-widest font-bold">AIMSAF HOLDINGS</div>
             </motion.div>
         </div>
     );

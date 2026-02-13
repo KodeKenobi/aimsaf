@@ -20,7 +20,7 @@ const LandingPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeInOut", duration: 0.7, delay: 0.6 }}
             >
-                Boldhaven is an Alternative Investment Manager based in London
+                Structure. Governance. Sustainable Asset Performance.
             </motion.h1>
             <div className="absolute z-100 sm:bottom-10 bottom-10 md:bottom-[5vw] lg:bottom-[5vw] xl:bottom-[8vw] 2xl:bottom-[10vw] z-10 right-[calc(37%)]">
                 <motion.svg
@@ -33,9 +33,9 @@ const LandingPage = () => {
                 </motion.svg>
                 <motion.div
                     initial={{ height: 0, y: 0 }}
-                    whileInView={{ height: '60vh', y: 0 }}
+                    whileInView={{ height: '50vh', y: 0 }}
                     transition={{ ease: "easeInOut", duration: 4, delay: 1.2 }}
-                    className="h-[60vh] hidden xl:block w-[2px] bg-highlight absolute  rotate-180 z-10 right-[46%]"
+                    className="h-[50vh] hidden xl:block w-[2px] bg-highlight absolute  rotate-180 z-10 right-[46%]"
                 >
                     <motion.div
                         initial={{ width: 0 }}

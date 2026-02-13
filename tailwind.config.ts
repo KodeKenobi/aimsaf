@@ -36,8 +36,8 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "hero": "url('/boldhaven-hero.png')",
-        "contact": "url('/boldhaven-contact-us.webp')",
+        "hero": "url('/hero.png')",
+        "contact": "url('/aimsaf-contact-us.webp')",
       },
     },
   },

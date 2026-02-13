@@ -30,7 +30,7 @@ export default function Disclosures() {
                     <div className="text-white md:pt-24 pt-0">
                         <p className="text-sm font-bold uppercase mb-10">Modern Slavery Act Transparency Statement</p>
                         <p className="text-sm">
-                            Boldhaven Management LLP (&quot;Boldhaven&quot; or &quot;the Firm&quot;) acknowledges the importance of compliance with the Modern Slavery Act 2015 (the “MSA”). Modern slavery as referred to in the MSA includes slavery, servitude and forced or compulsory labour, and human trafficking, and human trafficking. The Firm is committed to conducting its business without modern slavery in either its business or its supply chains and to being transparent in its approach, as is consistent with the Firm&quot;s obligations under the MSA.
+                            Aimsaf LLP (&quot;AIMSAF HOLDINGS&quot; or &quot;the Firm&quot;) acknowledges the importance of compliance with the Modern Slavery Act 2015 (the “MSA”). Modern slavery as referred to in the MSA includes slavery, servitude and forced or compulsory labour, and human trafficking, and human trafficking. The Firm is committed to conducting its business without modern slavery in either its business or its supply chains and to being transparent in its approach, as is consistent with the Firm&quot;s obligations under the MSA.
                             <br /><br />
                             After having reviewed the requirements of the MSA with regard to its business and supply chain, the Firm considers that its business and supply chain are at a low risk of involving instances of modern slavery. The Firm is aware of the importance of its compliance with the MSA and the need to take into account the risk of modern slavery in the Firm&quot;s business.
                             <br /><br />
@@ -44,9 +44,9 @@ export default function Disclosures() {
                     <div className="text-white md:pt-24 pt-0">
                         <p className="text-sm font-bold uppercase mb-10">UK Stewardship Code</p>
                         <p className="text-sm">
-                            Under Rule 2.2.3R of the Financial Conduct Authority&apos;s (&quot;FCA&quot;) Conduct of Business Sourcebook, Boldhaven Management LLP (&quot;Boldhaven&quot; or &quot;the Firm&quot;), to the extent it is managing investments for a professional client (as defined by the FCA), is required to include a disclosure about the nature of its commitment to the UK Financial Reporting Council&apos;s Stewardship Code (the &quot;Code&quot;) or, where it does not commit to the Code, explain its considered choice based on the Firm&apos;s investment approach. The Code is a voluntary code and sets out a number of principles relating to engagement by investors in UK-listed companies.
+                            Under Rule 2.2.3R of the Financial Conduct Authority&apos;s (&quot;FCA&quot;) Conduct of Business Sourcebook, Aimsaf LLP (&quot;AIMSAF HOLDINGS&quot; or &quot;the Firm&quot;), to the extent it is managing investments for a professional client (as defined by the FCA), is required to include a disclosure about the nature of its commitment to the UK Financial Reporting Council&apos;s Stewardship Code (the &quot;Code&quot;) or, where it does not commit to the Code, explain its considered choice based on the Firm&apos;s investment approach. The Code is a voluntary code and sets out a number of principles relating to engagement by investors in UK-listed companies.
                             <br /><br />
-                            Boldhaven invests in a variety of asset classes in a variety of jurisdictions globally. Whilst Boldhaven generally supports the objectives that underlie the Code, the nature of its investment strategy does not allow it to formally engage with investee companies through voting rights. The Firm has therefore chosen not to commit to the Code at this time.
+                            AIMSAF HOLDINGS invests in a variety of asset classes in a variety of jurisdictions globally. Whilst AIMSAF HOLDINGS generally supports the objectives that underlie the Code, the nature of its investment strategy does not allow it to formally engage with investee companies through voting rights. The Firm has therefore chosen not to commit to the Code at this time.
                             <br /><br />
                         </p>
                     </div>
@@ -56,20 +56,20 @@ export default function Disclosures() {
                     <div className="text-white md:pt-24 pt-0">
                         <p className="text-sm font-bold uppercase mb-10">Introduction</p>
                         <p className="text-sm">
-                            The Financial Conduct Authority (“FCA” or “regulator”) in its Prudential sourcebook for MiFID Investment Firms (“MIFIDPRU”) sets out the detailed prudential requirements that apply to Boldhaven Management LLP (“Boldhaven” or “the Firm”). In particular, Chapter 8 of MIFIDPRU (“MIFIDPRU 8” or the “public disclosures requirements”) sets out public disclosure obligations with which the Firm must comply, further to those prudential obligations.
+                            The Financial Conduct Authority (“FCA” or “regulator”) in its Prudential sourcebook for MiFID Investment Firms (“MIFIDPRU”) sets out the detailed prudential requirements that apply to Aimsaf LLP (“AIMSAF HOLDINGS” or “the Firm”). In particular, Chapter 8 of MIFIDPRU (“MIFIDPRU 8” or the “public disclosures requirements”) sets out public disclosure obligations with which the Firm must comply, further to those prudential obligations.
                             <br /><br />
-                            Boldhaven is classified under MIFIDPRU as a small and non-interconnected investment firm (“SNI MIFIDPRU investment firm”). As such, MIFIDPRU 8 requires Boldhaven to disclose information regarding the Firm&apos;s remuneration policy and practices.
+                            AIMSAF HOLDINGS is classified under MIFIDPRU as a small and non-interconnected investment firm (“SNI MIFIDPRU investment firm”). As such, MIFIDPRU 8 requires AIMSAF HOLDINGS to disclose information regarding the Firm&apos;s remuneration policy and practices.
                             <br /><br />
                             The purpose of these disclosures is to give stakeholders and market participants an insight into the Firm’s culture, and to assist stakeholders in making more informed decisions about their relationship with the Firm.
                             <br /><br />
-                            This document has been prepared by Boldhaven in accordance with the requirements of MIFPRU 8 and is verified by the Governing Body. Unless otherwise stated, all figures are as at the 31 st March 2024 financial year-end.
+                            This document has been prepared by AIMSAF HOLDINGS in accordance with the requirements of MIFPRU 8 and is verified by the Governing Body. Unless otherwise stated, all figures are as at the 31 st March 2024 financial year-end.
                             <br /><br />
                         </p>
 
                         <p className="text-sm font-bold uppercase mb-10 mt-10">Remuneration Policy and Practices</p>
                         <p className="text-sm font-bold uppercase mb-10 mt-10">Overview</p>
                         <p className="text-sm">
-                            As an SNI MIFIDPRU investment firm, Boldhaven is subject to the basic requirements of the MIFIDPRU Remuneration code. Boldhaven, as an alternatives investment fund manager, is also classified as a collective portfolio management investment firm, and as such, is also subject to the AIFM Remuneration Code. The purpose of the requirements on remuneration are to:
+                            As an SNI MIFIDPRU investment firm, AIMSAF HOLDINGS is subject to the basic requirements of the MIFIDPRU Remuneration code. AIMSAF HOLDINGS, as an alternatives investment fund manager, is also classified as a collective portfolio management investment firm, and as such, is also subject to the AIFM Remuneration Code. The purpose of the requirements on remuneration are to:
                             <br /><br />
                             <ul className="list-disc">
                                 <li>Promote effective risk management in the long-term interests of the Firm and its clients;</li>
@@ -78,18 +78,18 @@ export default function Disclosures() {
                                 <li>Discourage behaviours that can lead to misconduct and poor customer outcomes.</li>
                             </ul>
                             <br /><br />
-                            The objective of Boldhaven&apos;s remuneration policies and practices are to establish, implement and maintain a culture that is consistent with, and promotes, sound and effective risk management and does not encourage risk-taking which is inconsistent with the risk profile of the Firm and the services that it provides to its clients.
+                            The objective of AIMSAF HOLDINGS&apos;s remuneration policies and practices are to establish, implement and maintain a culture that is consistent with, and promotes, sound and effective risk management and does not encourage risk-taking which is inconsistent with the risk profile of the Firm and the services that it provides to its clients.
                             <br /><br />
-                            In addition, Boldhaven recognises that remuneration is a key component in how the Firm attracts, motivates and retains quality staff and sustains consistently high levels of performance, productivity and results. As such, the Firm&apos;s remuneration philosophy is also grounded in the belief that its people are the most important asset and greatest competitive advantage.
+                            In addition, AIMSAF HOLDINGS recognises that remuneration is a key component in how the Firm attracts, motivates and retains quality staff and sustains consistently high levels of performance, productivity and results. As such, the Firm&apos;s remuneration philosophy is also grounded in the belief that its people are the most important asset and greatest competitive advantage.
                             <br /><br />
-                            Boldhaven is committed to excellence, teamwork, ethical behaviour and the pursuit of exceptional outcomes for its clients. From a remuneration perspective, this means that performance is determined through the assessment of various factors that relate to these values, and by making considered and informed decisions that reward effort, attitude and results.
+                            AIMSAF HOLDINGS is committed to excellence, teamwork, ethical behaviour and the pursuit of exceptional outcomes for its clients. From a remuneration perspective, this means that performance is determined through the assessment of various factors that relate to these values, and by making considered and informed decisions that reward effort, attitude and results.
                             <br /><br />
                         </p>
                         <br />
                         <br />
                         <p className="text-sm font-bold uppercase mb-10">Characteristics of the remuneration policy and practices</p>
                         <p className="text-sm">
-                            Remuneration at Boldhaven is made up of fixed and variable components. The fixed component is set in line with market competitiveness at a level to attract and retain skilled staff. Variable remuneration are paid on a discretionary basis and take into consideration the Firm’s financial performance, and the financial and non-financial performance of the individual in contributing to the Firm’s success. All staff members are eligible to receive variable remuneration.
+                            Remuneration at AIMSAF HOLDINGS is made up of fixed and variable components. The fixed component is set in line with market competitiveness at a level to attract and retain skilled staff. Variable remuneration are paid on a discretionary basis and take into consideration the Firm’s financial performance, and the financial and non-financial performance of the individual in contributing to the Firm’s success. All staff members are eligible to receive variable remuneration.
                             <br /><br />
                             The below table summarises the financial and non-financial criteria of performance used across the Firm in assessing the level of variable remuneration to be paid:
                             <br /><br />
@@ -151,7 +151,7 @@ export default function Disclosures() {
                         </p>
                         <p className="text-sm font-bold uppercase mb-10 mt-10">Governance and Oversight</p>
                         <p className="text-sm">
-                        The Governing Body is responsible for setting and overseeing the implementation of Boldhaven&apos;s remuneration policy and practices. In order to fulfil its responsibilities, the Governing Body:
+                        The Governing Body is responsible for setting and overseeing the implementation of AIMSAF HOLDINGS&apos;s remuneration policy and practices. In order to fulfil its responsibilities, the Governing Body:
                             <br />
                             <br />
                             <ul className="list-disc">
@@ -161,7 +161,7 @@ export default function Disclosures() {
                                 <li>Ensures that the overall remuneration policy is consistent with the business strategy, objectives, values and interests of the Firm and of its clients.</li>
                             </ul>
                             <br /> <br />
-                            Boldhaven&apos;s remuneration policy and practices are reviewed annually by the Governing Body.
+                            AIMSAF HOLDINGS&apos;s remuneration policy and practices are reviewed annually by the Governing Body.
                         </p>
                         <p className="text-sm mb-10 mt-10 font-bold uppercase">
                             Quantitative Remuneration Disclosures
@@ -176,9 +176,9 @@ export default function Disclosures() {
                     <div className="text-white md:pt-24 pt-0">
                         <p className="text-sm font-bold uppercase mb-10">Terms and Conditions</p>
                         <p className="text-sm">
-                            This website is provided by Boldhaven Management LLP.
+                            This website is provided by Aimsaf LLP.
                             <br /><br />
-                            This website is subject to international copyright laws and other intellectual property rights with all rights reserved. No information contained in this website, any part of this website, or associated documents (together the “Information”), may be redistributed in whole or in part, stored securely in a retrieval system, modified, linked into, republished, uploaded, transmitted in any form or by any means electronic or mechanical, or by photocopying, recording or otherwise without the express prior written permission of Boldhaven Management LLP.
+                            This website is subject to international copyright laws and other intellectual property rights with all rights reserved. No information contained in this website, any part of this website, or associated documents (together the “Information”), may be redistributed in whole or in part, stored securely in a retrieval system, modified, linked into, republished, uploaded, transmitted in any form or by any means electronic or mechanical, or by photocopying, recording or otherwise without the express prior written permission of Aimsaf LLP.
                             <br /><br />
                             The Information is confidential and is not intended to influence you in making any investment decisions and should not be considered as advice or a recommendation to invest. Any Information in this website may not be suitable for all investors and investors must make their own investment decisions using their own independent advisors and relevant offering material. Any investment decisions must be based upon an investor&apos;s specific financial situation and investment objectives and should be based solely on the information in the relevant offering memorandum. Income from or the price or value of any financial instruments may rise or fall. <strong>Past performance is not necessarily indicative of future results.</strong>
                             <br /><br />
@@ -186,9 +186,9 @@ export default function Disclosures() {
                             <br /><br />
                             The investment products and services described herein have not been and will not be registered in the United States with the Securities and Exchange Commission.  Information on this website shall not be construed as an offer or public offering of shares in any fund nor does it constitute a general solicitation, general advertising or direct selling effort under the Securities Act of 1933 of the United States.
                             <br /><br />
-                            Boldhaven Management LLP assumes no responsibility or liability for the correctness, accuracy, timeliness or completeness of the Information, for any viruses contained in, or attached to, this website or for any loss, damage or lost opportunities resulting from the use of the Information. Any views, opinions or assumptions may be subject to change without notice.
+                            Aimsaf LLP assumes no responsibility or liability for the correctness, accuracy, timeliness or completeness of the Information, for any viruses contained in, or attached to, this website or for any loss, damage or lost opportunities resulting from the use of the Information. Any views, opinions or assumptions may be subject to change without notice.
                             <br /><br />
-                            Boldhaven Management LLP. Incorporated in England and Wales, Company Number: OC419544. Registered office: 100 Wigmore Street, London WIU 3RN
+                            Aimsaf LLP. Incorporated in England and Wales, Company Number: OC419544. Registered office: 100 Wigmore Street, London WIU 3RN
                             <br /><br />
                             Authorised and regulated by the UK Financial Conduct Authority (FCA Registration Number: 792765). and registered as an Investment Adviser with US Securities and Exchange Commission (SEC). (CRD # 304300/ SEC#:801-120201).
                             <br /><br />
@@ -200,7 +200,7 @@ export default function Disclosures() {
                     <div className="text-white md:pt-24 pt-0">
                         <p className="text-sm font-bold uppercase mb-10">Shareholder Rights Directive</p>
                         <p className="text-sm">
-                            Boldhaven Management LLP (“Boldhaven”) is making this statement in Compliance with Rule 2.2B.5R of the FCA&apos;s Conduct of Business Sourcebook (“COBS”).
+                            Aimsaf LLP (“AIMSAF HOLDINGS”) is making this statement in Compliance with Rule 2.2B.5R of the FCA&apos;s Conduct of Business Sourcebook (“COBS”).
                             <br /><br />
                             COBS requires every FCA authorised asset manager that invests in listed equities to:
                             <br /><br />
@@ -210,9 +210,9 @@ export default function Disclosures() {
                             <br /><br />
                             or, in either case, to publicly disclose a clear and reasoned explanation of why it has chosen not to comply with those requirements.
                             <br /><br />
-                            Boldhaven has considered carefully whether it wishes to adopt an engagement policy and to make the disclosures described above and has, for the time being, decided not to do so. As regards Boldhaven&apos;s investments that are focused on equities, Boldhaven generally does not vote proxies. Upon the exceptional specific request of an individual portfolio manager, the Firm&apos;s compliance department, in consultation with senior management, may consider granting permission to vote proxies, if it determines that the vote is in the best interest of investors.
+                            AIMSAF HOLDINGS has considered carefully whether it wishes to adopt an engagement policy and to make the disclosures described above and has, for the time being, decided not to do so. As regards AIMSAF HOLDINGS&apos;s investments that are focused on equities, AIMSAF HOLDINGS generally does not vote proxies. Upon the exceptional specific request of an individual portfolio manager, the Firm&apos;s compliance department, in consultation with senior management, may consider granting permission to vote proxies, if it determines that the vote is in the best interest of investors.
                             <br /><br />
-                            Therefore, while Boldhaven supports the general principles of shareholder engagement, it does not at this time (for the reasons set out above) consider it appropriate to adopt an engagement policy or make the relevant public disclosures. Boldhaven will keep its position under review and will update this section of its website accordingly, if there is a change in its approach.
+                            Therefore, while AIMSAF HOLDINGS supports the general principles of shareholder engagement, it does not at this time (for the reasons set out above) consider it appropriate to adopt an engagement policy or make the relevant public disclosures. AIMSAF HOLDINGS will keep its position under review and will update this section of its website accordingly, if there is a change in its approach.
                         </p>
                     </div>
                 );
@@ -221,7 +221,7 @@ export default function Disclosures() {
                     <div className="text-white md:pt-24 pt-0">
                         <p className="text-sm font-bold uppercase mb-10">Privacy Policy</p>
                         <p className="text-sm mb-10">
-                            Your privacy is very important to us. This notice (“Privacy Notice”) is provided by Boldhaven Management LLP (“we” or “us”) and sets out our policies with respect to the collection, sharing and use of personal information.
+                            Your privacy is very important to us. This notice (“Privacy Notice”) is provided by Aimsaf LLP (“we” or “us”) and sets out our policies with respect to the collection, sharing and use of personal information.
                             <br /><br />
                             <strong>How we collect information about you</strong>
                             <br /><br />
@@ -307,7 +307,7 @@ export default function Disclosures() {
                         </p>
                         <p className="text-sm font-bold mb-10">How to contact us</p>
                         <p className="text-sm mb-10">
-                            If you have any questions about this Privacy Notice or requests with regards to the personal data we hold about you, you may contact our Chief Operating Officer by email at aschaeffer@boldhaven.com or by writing to 100 Wigmore Street, London, W1U 3RN
+                            If you have any questions about this Privacy Notice or requests with regards to the personal data we hold about you, you may contact our Chief Operating Officer by email at aschaeffer@AIMSAF HOLDINGS.com or by writing to 100 Wigmore Street, London, W1U 3RN
                         </p>
                         <p className="text-sm font-bold mb-10">Complaining to ICO</p>
                         <p className="text-sm mb-10">
@@ -383,7 +383,7 @@ export default function Disclosures() {
                             Telephone:
                             <a href="tel:0208 017 4517"> 0208 017 4517</a>
                             <br />
-                            Email: <a href="mailto:0208 017 4517">  Aschaeffer@boldhaven.com</a>
+                            Email: <a href="mailto:0208 017 4517">  Aschaeffer@AIMSAF HOLDINGS.com</a>
                             <br />
                             <br />
                         </p>
@@ -412,7 +412,7 @@ export default function Disclosures() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 h-full">
                 <div className="menu lg:col-span-1 col-span-4 lg:fixed block">
                     <ul>
-                        <a href="/"><img src="./boldhaven-logo.svg" className="w-42 mb-10 " /></a>
+                        <a href="/"><img src="./aimsaf-logo.svg" className="w-42 mb-10 " /></a>
                         <p onClick={() => router.push('/')} className="text-white uppercase font-sans text-primary text-xs font-semibold mb-8 cursor-pointer">{`< BACK`}</p>
                         {links.map((item: any, key: number) => {
                             return <div key={key} className="flex flex-row items-center gap-1 w-[90%]">{item.icon && <Image className="mb-8" width={15} height={15} src={"/icon-pdf.svg"} alt={"pdf-icon"} />}<li key={key} onClick={() => { setContent(item.name) }} className="uppercase font-sans text-primary text-xs font-semibold mb-8 cursor-pointer" style={item.name === content ? { color: '#417CFF' } : { color: '#fff' }}>{item.name}</li></div>

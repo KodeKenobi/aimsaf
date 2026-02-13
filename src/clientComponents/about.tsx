@@ -22,28 +22,28 @@ const About = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ ease: "easeInOut", duration: 0.7, delay: 1 }}
                 >
-                    Fundamental.
+                    Independent.
                     <br />
-                    Concentrated. Long-Term.
+                    Analytical. Performance-Driven.
 
                 </motion.h3>
                 <motion.p
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ ease: "easeInOut", duration: 0.7, delay: 1.2 }}
-                    className="  font-[500] font-sans 4xl:text-2xl md:text-base text-xs">Boldhaven is an alternative investment management firm founded in 2017 and based in London.
+                    className="  font-[500] font-sans 4xl:text-2xl md:text-base text-xs">AIMSAF HOLDINGS is a specialised property advisory and portfolio consulting firm serving commercial, retail, and residential asset owners across South Africa and Dubai.
                 </motion.p>
                 <motion.p
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ ease: "easeInOut", duration: 0.7, delay: 1.4 }}
-                    className=" mt-8 font-sans 4xl:text-2xl md:text-base text-xs">We manage a concentrated strategy focused on long and short opportunities in Europe.
+                    className=" mt-8 font-sans 4xl:text-2xl md:text-base text-xs">We partner with portfolio managers, property owners, and asset custodians to strengthen governance frameworks, enhance operational discipline, and protect long-term asset value.
                 </motion.p>
                 <motion.p
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ ease: "easeInOut", duration: 0.7, delay: 1.6 }}
-                    className=" mt-8 font-sans 4xl:text-2xl md:text-base text-xs">Our approach, led by Ronald Sofer (Founder & CIO), is defined by deep fundamental research,<br /> a long-term investment horizon and a focus on intrinsic value.
+                    className=" mt-8 font-sans 4xl:text-2xl md:text-base text-xs">Sustainable yield depends on structured controls, risk mitigation, financial oversight, and measurable operational standards. We have worked for over 150 corporate companies, implementing successful business turnarounds to the value of 50 million Rands +.
                 </motion.p>
             </div>
         </div>

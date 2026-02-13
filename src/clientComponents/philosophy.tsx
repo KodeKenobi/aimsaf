@@ -6,26 +6,26 @@ const Philosophy = () => {
 
     const data = [
         {
-            heading: 'Long-term approach',
-            content: 'The market’s focus on short-term profits creates opportunities for investors who can invest with duration. We work to understand the quality and durability of cash flow generation to gauge earnings power and intrinsic value.',
+            heading: 'Business Consulting',
+            content: 'Providing expert, independent advice to organizations to improve performance, solve complex problems, and enhance growth.',
             icon: '/icons/icon-01.svg',
             timing: 0.6
         },
         {
-            heading: 'Contrarian mindset',
-            content: 'We favour investments where our views around the long-term trajectory, sustainability and quality of cash-based earnings, informed by deep proprietary research, are significantly different to consensus expectations.',
+            heading: 'Business Turnaround',
+            content: 'Identifying bottlenecks, cutting costs, and optimizing business processes for efficiency and renewed profitability.',
             icon: '/icons/icon-02.svg',
             timing: 1.2
         },
         {
-            heading: 'Market-cap flexibility',
-            content: 'We are market-cap agnostic, however, we consistently deploy a significant amount of capital in the small- and mid-cap universe. Less industry coverage in these strata can drive large dislocations and thus present attractive entry opportunities for the long-term investor.',
+            heading: 'Business Risk Analysis',
+            content: 'Mitigating structural risk and implementing systems that enhance transparency, accountability, and operational resilience.',
             icon: '/icons/icon-03.svg',
             timing: 1.8
         },
         {
-            heading: 'Dedicated short process',
-            content: `Our short book does not exist to fund our long book. It is designed to be a standalone portfolio of ideas where we believe significant misunderstanding exists around the quality, sustainability and trajectory of a company's operating metrics.`,
+            heading: 'Specialized Audits',
+            content: 'Performing IT, food safety, or ESG audits to ensure compliance with specific industry standards and regulatory frameworks.',
             icon: '/icons/icon-04.svg',
             timing: 2.4
         },
@@ -39,7 +39,7 @@ const Philosophy = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ ease: "easeInOut", duration: 0.7 }}
             >
-                Philosophy
+                What we offer
             </motion.h2>
             <motion.h3 className="md:text-[55px] 4xl:text-[80px] text-[24px] leading-none text-white font-serif mb-4"
                 initial={{ opacity: 0, x: -10 }}

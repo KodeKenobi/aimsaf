@@ -12,8 +12,8 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Boldhaven Management",
-  description: "Boldhaven Investments",
+  title: "Aimsaf",
+  description: "Aimsaf Holdings",
 };
 
 export default function RootLayout({
