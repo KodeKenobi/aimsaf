@@ -12,24 +12,24 @@ const Contact = () => {
     const data = [
         {
             icon: '/icons/icon-contact-phone.svg',
-            href: '#',
+            href: 'tel:+27101416320',
             label: 'Phone',
-            link: '+27 (0) XX XXX XXXX',
-            timing: 0.6
+            link: '+27 10 141 6320',
+            timing: 0.2
         },
         {
             icon: '/icons/icon-contact-email.svg',
-            href: 'mailto:info@aimsaf.holdings',
+            href: 'mailto:info@aimsafholdings.co.za',
             label: 'Email',
-            link: 'info@aimsaf.holdings',
-            timing: 0.8
+            link: 'info@aimsafholdings.co.za',
+            timing: 0.3
         },
         {
             icon: '/icons/icon-contact-address.svg',
             href: '#',
             label: 'Address',
-            link: 'With offices in KZN and Gauteng',
-            timing: 1
+            link: '2nd Floor, Michael Angelo Towers (West Tower), Nelson Mandela Square, Sandton City, 2146',
+            timing: 0.4
         },
     ];
 
@@ -66,13 +66,21 @@ const Contact = () => {
                         Contact
                     </motion.h2>
                     <motion.h3
-                        className="md:text-[55px] text-[30px] text-white relative z-1 font-serif font-light leading-none md:mb-14 mb-8 4xl:text-[70px]"
+                        className="md:text-[40px] text-[24px] text-white relative z-1 font-serif font-light leading-tight md:mb-8 mb-6 4xl:text-[70px]"
                         initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ ease: "easeInOut", duration: 0.7, delay: 1 }}
+                        transition={{ ease: "easeInOut", duration: 0.7, delay: 0.3 }}
                     >
-                        Get in touch
+                        Protect the Performance of Your Portfolio
                     </motion.h3>
+                    <motion.p
+                        className="text-white md:text-sm text-xs font-sans mb-10 md:w-[80%]"
+                        initial={{ opacity: 0, x: -10 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ ease: "easeInOut", duration: 0.7, delay: 0.4 }}
+                    >
+                        Strong assets require disciplined oversight. Engage with AIMSAF HOLDINGS for a confidential portfolio review and structured advisory assessment.
+                    </motion.p>
                     <div className="flex flex-col md:gap-6 gap-4 mb-10 font-sans">
                         {data.map((item, index) => (
                             <div key={index} className="flex items-center">
@@ -109,7 +117,7 @@ const Contact = () => {
                                         className="w-1/2 px-3 md:mb-0"
                                         initial={{ opacity: 0, x: 20 }}
                                         whileInView={{ opacity: 1, x: 0 }}
-                                        transition={{ ease: "easeIn", duration: 0.4, delay: 1 }}
+                                        transition={{ ease: "easeIn", duration: 0.4, delay: 0.5 }}
                                     >
                                         <Field
                                             className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 font-sans md:text-sm text-xs py-3 4xl:text-2xl"
@@ -124,7 +132,7 @@ const Contact = () => {
                                         className="w-1/2 px-3 md:mb-0"
                                         initial={{ opacity: 0, x: 20 }}
                                         whileInView={{ opacity: 1, x: 0 }}
-                                        transition={{ ease: "easeIn", duration: 0.4, delay: 1 }}
+                                        transition={{ ease: "easeIn", duration: 0.4, delay: 0.5 }}
                                     >
                                         <Field
                                             className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 md:text-sm text-xs py-3 4xl:text-2xl"
@@ -141,7 +149,7 @@ const Contact = () => {
                                         className="w-full md:w-2/2 px-3 md:mb-0"
                                         initial={{ opacity: 0, x: 20 }}
                                         whileInView={{ opacity: 1, x: 0 }}
-                                        transition={{ ease: "easeIn", duration: 0.4, delay: 1.2 }}
+                                        transition={{ ease: "easeIn", duration: 0.4, delay: 0.6 }}
                                     >
                                         <Field
                                             className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 md:text-sm text-xs py-3 4xl:text-2xl"
@@ -158,7 +166,7 @@ const Contact = () => {
                                         className="w-full md:w-2/2 px-3 md:mb-0"
                                         initial={{ opacity: 0, x: 20 }}
                                         whileInView={{ opacity: 1, x: 0 }}
-                                        transition={{ ease: "easeIn", duration: 0.4, delay: 1.4 }}
+                                        transition={{ ease: "easeIn", duration: 0.4, delay: 0.7 }}
                                     >
                                         <Field
                                             className="appearance-none block w-full bg-transparent text-white border-b-[1px] border-gray leading-tight placeholder:text-white focus:outline-none focus:border-gray-400 md:text-sm text-xs py-3 4xl:text-2xl"
@@ -174,7 +182,7 @@ const Contact = () => {
                                     className="flex items-center justify-between"
                                     initial={{ opacity: 0, x: 20 }}
                                     whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ ease: "easeIn", duration: 0.4, delay: 1.6 }}
+                                    transition={{ ease: "easeIn", duration: 0.4, delay: 0.8 }}
                                 >
                                     <button
                                         className="bg-transparent md:text-sm text-xs text-accent ml-auto md:mb-0 mb-2 4xl:text-2xl"
@@ -194,14 +202,13 @@ const Contact = () => {
                 className="bg-transparent w-full py-6 flex lg:flex-row flex-col items-center justify-between border-[#ffffff15] border-t"
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ ease: "easeIn", duration: 0.4, delay: 2.5 }}
+                transition={{ ease: "easeIn", duration: 0.4, delay: 1 }}
             >
                 <div className="text-center lg:text-left">
                     <p className="md:block hidden font-light font-sans md:text-xs text-[10px] text-gray md:w-[75%] w-full text-center mx-auto pb-4 lg:text-left lg:mx-0 lg:pb-0 4xl:text-2xl md:mt-8 mt-8">
                         Copyright © {currentYear} AIMSAF HOLDINGS | All rights reserved
                     </p>
                 </div>
-                <div className="md:w-auto w-32 mt-8 md:mt-0 text-white font-serif text-xl tracking-widest font-bold">AIMSAF HOLDINGS</div>
             </motion.div>
         </div>
     );

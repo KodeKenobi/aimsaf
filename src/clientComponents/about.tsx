@@ -17,33 +17,58 @@ const About = () => {
                 >
                     about
                 </motion.h2>
-                <motion.h3 className="md:text-[55px] 4xl:text-[80px] text-[24px] leading-none text-primary font-serif mb-14"
+                <motion.h3 className="md:text-[50px] 4xl:text-[80px] text-[24px] leading-tight text-primary font-serif mb-8"
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ ease: "easeInOut", duration: 0.7, delay: 1 }}
+                    transition={{ ease: "easeInOut", duration: 0.7, delay: 0.3 }}
                 >
-                    Independent.
+                    Analytical. Independent.
                     <br />
-                    Analytical. Performance-Driven.
+                    Performance-Driven.
 
                 </motion.h3>
                 <motion.p
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ ease: "easeInOut", duration: 0.7, delay: 1.2 }}
-                    className="  font-[500] font-sans 4xl:text-2xl md:text-base text-xs">AIMSAF HOLDINGS is a specialised property advisory and portfolio consulting firm serving commercial, retail, and residential asset owners across South Africa and Dubai.
+                    transition={{ ease: "easeInOut", duration: 0.7, delay: 0.5 }}
+                    className="  font-[500] font-sans 4xl:text-2xl md:text-base text-xs">AIMSAF HOLDINGS is an independent specialised property
+                    advisory consulting and auditing firm serving commercial,
+                    retail, and residential asset owners across South Africa and
+                    UAE.
                 </motion.p>
                 <motion.p
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ ease: "easeInOut", duration: 0.7, delay: 1.4 }}
-                    className=" mt-8 font-sans 4xl:text-2xl md:text-base text-xs">We partner with portfolio managers, property owners, and asset custodians to strengthen governance frameworks, enhance operational discipline, and protect long-term asset value.
+                    transition={{ ease: "easeInOut", duration: 0.7, delay: 0.6 }}
+                    className=" mt-4 font-sans 4xl:text-2xl md:text-base text-xs">We partner with portfolio managers, property owners, and
+                    asset custodians to strengthen governance frameworks,
+                    enhance operational discipline, and protect long-term asset
+                    value.
                 </motion.p>
                 <motion.p
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ ease: "easeInOut", duration: 0.7, delay: 1.6 }}
-                    className=" mt-8 font-sans 4xl:text-2xl md:text-base text-xs">Sustainable yield depends on structured controls, risk mitigation, financial oversight, and measurable operational standards. We have worked for over 150 corporate companies, implementing successful business turnarounds to the value of 50 million Rands +.
+                    transition={{ ease: "easeInOut", duration: 0.7, delay: 0.7 }}
+                    className=" mt-4 font-sans 4xl:text-2xl md:text-base text-xs">In increasingly complex property environments, performance
+                    is no longer driven by occupancy alone. Sustainable yield
+                    depends on structured controls, risk mitigation, financial
+                    oversight, and measurable operational standards.
+                </motion.p>
+                <motion.p
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ ease: "easeInOut", duration: 0.7, delay: 0.8 }}
+                    className=" mt-4 font-sans 4xl:text-2xl md:text-base text-xs">Our approach is Analytical, Independent, and Performance-Driven.
+                    We identify inefficiencies, mitigate structural risk, and
+                    implement systems that enhance transparency,
+                    accountability, and long-term capital preservation.
+                </motion.p>
+                <motion.p
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ ease: "easeInOut", duration: 0.7, delay: 0.9 }}
+                    className=" mt-4 font-sans 4xl:text-2xl md:text-base text-xs italic font-semibold">At AIMSAF HOLDINGS, we do not manage properties —
+                    we strengthen the systems that protect them.
                 </motion.p>
             </div>
         </div>

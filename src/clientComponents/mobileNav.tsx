@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const MobileNav = () => {
+const MobileNav = ({ activeSection }: { activeSection: number }) => {
     const [isOpen, setIsOpen] = useState(false);
     const genericHamburgerLine = `h-[1px] w-7 my-1 rounded-full bg-white transition ease transform duration-300 z-10`;
     const currentYear = new Date().getFullYear();
@@ -50,28 +50,35 @@ const MobileNav = () => {
 
                 <a href="#home" onClick={() => setIsOpen(false)}>
                     <li
-                        className=' uppercase tracking-wide font-sans p-3 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
+                        className={`uppercase tracking-wide font-sans p-3 pr-12 duration-300 cursor-pointer border-gray-600 ${activeSection === 0 ? 'text-accent' : 'text-white'}`}
                     >
                         HOME
                     </li>
                 </a>
                 <a href="#about" onClick={() => setIsOpen(false)}>
                     <li
-                        className=' uppercase tracking-wide font-sans p-3 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
+                        className={`uppercase tracking-wide font-sans p-3 pr-12 duration-300 cursor-pointer border-gray-600 ${activeSection === 1 ? 'text-accent' : 'text-white'}`}
                     >
                         ABOUT
                     </li>
                 </a>
                 <a href="#philosophy" onClick={() => setIsOpen(false)}>
                     <li
-                        className=' uppercase tracking-wide font-sans p-3 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
+                        className={`uppercase tracking-wide font-sans p-3 pr-12 duration-300 cursor-pointer border-gray-600 ${activeSection === 2 ? 'text-accent' : 'text-white'}`}
                     >
-                        SERVICES
+                        WHAT WE OFFER
+                    </li>
+                </a>
+                <a href="#whoweserve" onClick={() => setIsOpen(false)}>
+                    <li
+                        className={`uppercase tracking-wide font-sans p-3 pr-12 duration-300 cursor-pointer border-gray-600 ${activeSection === 3 ? 'text-accent' : 'text-white'}`}
+                    >
+                        WHO WE SERVE
                     </li>
                 </a>
                 <a href="#contact" onClick={() => setIsOpen(false)}>
                     <li
-                        className=' uppercase tracking-wide font-sans p-3 pr-12   duration-300  cursor-pointer border-gray-600 text-white'
+                        className={`uppercase tracking-wide font-sans p-3 pr-12 duration-300 cursor-pointer border-gray-600 ${activeSection === 4 ? 'text-accent' : 'text-white'}`}
                     >
                         CONTACT
                     </li>

@@ -7,7 +7,7 @@ const LandingPage = () => {
 
 
     return (
-        <div id="home" className="flex w-full h-full items-center md:p-24 p-6 relative">
+        <div id="home" className="flex w-full h-full items-center md:p-24 p-6 relative bg-hero bg-cover">
             <motion.div
                 initial={{ width: 0, opacity: 0 }}
                 whileInView={{ width: '30%', opacity: 1 }}

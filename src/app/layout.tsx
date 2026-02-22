@@ -26,7 +26,7 @@ export default function RootLayout({
 
 
     <head>
-      <Script
+      {/* <Script
           id="gtm-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -38,19 +38,19 @@ export default function RootLayout({
               })(window,document,'script','dataLayer','GTM-PKSTPZ8P');
             `,
           }}
-        />
+        /> */}
 
     </head>
       <body className={`${montserrat.variable} overscroll-none`}>
       
-      <noscript>
+      {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-PKSTPZ8P"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
-        </noscript>
+        </noscript> */}
 
 
         {children}
