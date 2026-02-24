@@ -13,7 +13,7 @@ const WhoWeServe = () => {
 
     return (
         <div className="flex w-full h-full items-center overflow-hidden relative text-primary bg-white" id="whoweserve">
-            <div className="absolute bg-primary w-[30%] h-full left-0 top-0 bg-opacity-75" />
+            <div className="absolute bg-primary w-[30%] h-full left-0 top-0 bg-opacity-75 hidden lg:block" />
             <div className="lg:w-[70%] w-full h-full lg:ml-auto lg:p-24 p-6 flex flex-col justify-center z-10">
                 <motion.h2
                     className="uppercase tracking-widest text-accent md:text-sm text-xs mb-4 font-sans 4xl:text-2xl"
