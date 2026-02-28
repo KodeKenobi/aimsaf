@@ -52,7 +52,7 @@ const Philosophy = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeInOut", duration: 0.7, delay: 0.3 }}
             >
-                Structured, outcome-driven advisory and auditing across five core pillars</motion.h3>
+                Structured, Outcome-Driven Advisory And Auditing Across Five Core Pillars</motion.h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 w-full justify-between md:gap-6 gap-[5vh] gap-x-[5vw] md:mt-10 mt-4 relative z-10 overflow-hidden">
                 <motion.div
                     className="absolute w-[100%] h-[1px] bg-highlight left-0 top-[48px] z-[1] hidden lg:block"

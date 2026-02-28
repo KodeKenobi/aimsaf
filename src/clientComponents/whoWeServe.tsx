@@ -28,7 +28,7 @@ const WhoWeServe = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ ease: "easeInOut", duration: 0.7, delay: 0.1 }}
                 >
-                    Active Across South Africa & the UAE with successful corporate portfolio management in excess of 200 Million Rands.
+                    Active Across South Africa & The UAE With Successful Corporate Portfolio Management In Excess Of 200 Million Rands.
                 </motion.h3>
                 <div className="grid md:grid-cols-2 gap-12">
                     <motion.div
