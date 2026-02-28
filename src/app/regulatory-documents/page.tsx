@@ -147,11 +147,11 @@ export default function Disclosures() {
                         </table>
                         <br />< br />
                         <p className="text-sm mt-10">
-                        The fixed and variable components of remuneration are appropriately balanced: the fixed component represents a sufficiently high proportion of the total remuneration to enable the operation of a fully flexible policy on variable remuneration. This allows for the possibility of paying no variable remuneration component, which the Firm would do in certain situations, such as where the Firm&apos;s profitability performance is constrained, or where there is a risk that the Firm may not be able to meet its capital or liquidity regulatory requirements.
+                            The fixed and variable components of remuneration are appropriately balanced: the fixed component represents a sufficiently high proportion of the total remuneration to enable the operation of a fully flexible policy on variable remuneration. This allows for the possibility of paying no variable remuneration component, which the Firm would do in certain situations, such as where the Firm&apos;s profitability performance is constrained, or where there is a risk that the Firm may not be able to meet its capital or liquidity regulatory requirements.
                         </p>
                         <p className="text-sm font-bold uppercase mb-10 mt-10">Governance and Oversight</p>
                         <p className="text-sm">
-                        The Governing Body is responsible for setting and overseeing the implementation of AIMSAF HOLDINGS&apos;s remuneration policy and practices. In order to fulfil its responsibilities, the Governing Body:
+                            The Governing Body is responsible for setting and overseeing the implementation of AIMSAF HOLDINGS&apos;s remuneration policy and practices. In order to fulfil its responsibilities, the Governing Body:
                             <br />
                             <br />
                             <ul className="list-disc">
@@ -412,7 +412,6 @@ export default function Disclosures() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 h-full">
                 <div className="menu lg:col-span-1 col-span-4 lg:fixed block">
                     <ul>
-                        <a href="/"><img src="./aimsaf-logo.svg" className="w-42 mb-10 " /></a>
                         <p onClick={() => router.push('/')} className="text-white uppercase font-sans text-primary text-xs font-semibold mb-8 cursor-pointer">{`< BACK`}</p>
                         {links.map((item: any, key: number) => {
                             return <div key={key} className="flex flex-row items-center gap-1 w-[90%]">{item.icon && <Image className="mb-8" width={15} height={15} src={"/icon-pdf.svg"} alt={"pdf-icon"} />}<li key={key} onClick={() => { setContent(item.name) }} className="uppercase font-sans text-primary text-xs font-semibold mb-8 cursor-pointer" style={item.name === content ? { color: '#417CFF' } : { color: '#fff' }}>{item.name}</li></div>
